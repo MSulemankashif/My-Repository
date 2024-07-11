@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectable Table</title>
+    <link rel="stylesheet" href="./practicetodayform.css">
+
+</head>
+<body bgcolor="gray">
+    <div class="container">
+    <div class="box">
+    
+        <h3>To which company's call centre /helpline Mystery caller is making the call?</h3>
+
+    <table id="selectableTable" border="0" style="padding: 10px; margin: 5px;" class="table">
+        <tr>
+            <td>Unilever</td>
+            <td>Habib Bank Limited</td>
+        </tr>
+        <tr>
+            <td>Engro</td>
+            <td>Eastern Federal Union Insurance Company</td>
+        </tr>
+        <tr>
+            <td>Nestle</td>
+            <td>Jazz</td>
+        </tr>
+        <tr>
+            <td>Procter & Gamble Company</td>
+            <td>KFC</td>
+        </tr>
+        <tr>
+            <td>Colgate Palmolive</td>
+            <td>Dominos Pizza</td>
+        </tr>
+        <tr>
+            <td>National Food limited</td>
+            <td>Naheed</td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <div class="nav-button nav-button-prev">
+                <span>&#8249;</span>
+            </div>
+            <div class="nav-button nav-button-next">
+                <span>&#8250;</span>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var table = document.getElementById('selectableTable');
+            var cells = table.getElementsByTagName('td');
+
+            for (var i = 0; i < cells.length; i++) {
+                cells[i].addEventListener('click', function() {
+                    for (var j = 0; j < cells.length; j++) {
+                        cells[j].classList.remove('selected');
+                    }
+                    this.classList.add('selected');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

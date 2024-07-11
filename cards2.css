@@ -1,0 +1,119 @@
+   /* General styles for the navigation bar */
+   .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Ensure content starts below the navbar */
+.content {
+    padding-top: 70px; /* Adjust this value according to the height of your navbar */
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: wheat;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: wheat;
+}
+ /* General styles for the navigation bar */
+ .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Ensure content starts below the navbar */
+.content {
+    padding-top: 70px; /* Adjust this value according to the height of your navbar */
+}
+
+/* Card styles */
+
+.navbar
+{
+        box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+    
+}
+
+ 
+ .card
+ {
+    border-radius: 15px;
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,.2);
+ }
+ .card:hover{
+    box-shadow: 0 13px 40px 0 rgba(0,0,0,.2);
+ }
+  /* General styles for the navigation bar */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Ensure content starts below the navbar */
+.content {
+    padding-top: 70px; /* Adjust this value according to the height of your navbar */
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: wheat;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: wheat;
+}
+
+.img-fluid
+{
+    height: 300px;
+}

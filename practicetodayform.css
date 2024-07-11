@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.selected {
+    background-color: #d3d3d3;
+}
+
+td:hover
+{
+    background-color: aliceblue;
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-button {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease;
+}
+.nav-button-prev {
+    background-color: #e0e0e0;
+    color: black;
+}
+.nav-button-next {
+    background-color: #3f51b5;
+    color: white;
+}
+.nav-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box
+{
+height: 800px;
+width: 80%;
+background-color:white;
+
+}
+.container {
+  /* display: flex; */
+  justify-content: center; /* Centers horizontally */
+  /* align-items: center;    Centers vertically */
+         /* Makes the container take the full viewport height */
+}
+

@@ -1,0 +1,191 @@
+Certainly! Here's the updated HTML and JavaScript code that incorporates your `product` array and allows for dynamic product comparison with images:
+
+### HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .compare-header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .compare-table th, .compare-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .compare-table th {
+            background-color: #007bff;
+            color: white;
+        }
+        .compare-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .compare-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .product-select {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .product-select select, .product-select button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .product-image {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="compare-header">
+            <h1>Compare Products</h1>
+        </div>
+        <div class="product-select">
+            
+           
+            <a href="./practice2.html"><button class="button">UnChange</button> </a>
+           
+        </div>
+        <table class="compare-table" id="compareTable">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th id="product1Name">Product 1</th>
+                    <th id="product2Name">Product 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Image</td>
+                    <td><img id="product1Image" class="product-image" src="./download.jpg" alt="Product 1"></td>
+                    <td><img id="product2Image" class="product-image" src="./iphone 13.jpg" alt="Product 2"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td id="product1Price">999$</td>
+                    <td id="product2Price">545$</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td id="product1Description">The iPhone 11 features a dual-camera system, a powerful A13 Bionic chip, and a Liquid Retina HD display, delivering excellent performance and stunning visuals</td>
+                    <td id="product2Description">A budget-friendly smartphone with a 6.95-inch FHD+ display, MediaTek Dimensity 800U processor, 8GB RAM, and a 64MP quad-camera setup for high-performance and immersive experiences.</td>
+                </tr>
+                <tr>
+                    <td>Brand</td>
+                    <td id="product1Brand">Apple</td>
+                    <td id="product2Brand">Infinix</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        const products = [{
+            "id": 0,
+            "title": "",
+            "price": "",
+            "description": "",
+            "brand": "",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+        }, {
+            "id": 1,
+            "title": "Samsung Galaxy S22",
+            "price": 179999,
+            "description": "Samsung Galaxy S22 price in Pakistan is Rs. 179,999. Official dealers and warranty providers regulate the retail price of Samsung mobile products in official warranty.",
+            "brand": "Samsung",
+            "image": "https://www.whatmobile.com.pk/admin/images/Samsung/SamsungGalaxyS22-b.jpg"
+        }, {
+            "id": 2,
+            "title": "Vivo X80",
+            "price": 159999,
+            "description": "Vivo X80 price in Pakistan is Rs. 159,999. Official dealers and warranty providers regulate the retail price of Vivo mobile products in official warranty.",
+            "brand": "Vivo",
+            "image": "https://www.whatmobile.com.pk/admin/images/Vivo/VivoX80-b.jpg"
+        }, {
+            "id": 3,
+            "title": "Oppo F21 Pro 5G",
+            "price": 69999,
+            "description": "Oppo F21 Pro 5G price in Pakistan is Rs. 69,999. Official dealers and warranty providers regulate the retail price of Oppo mobile products in official warranty.",
+            "brand": "Oppo",
+            "image": "https://www.whatmobile.com.pk/admin/images/Oppo/OppoF21Pro5G-b.jpg"
+        }, {
+            "id": 4,
+            "title": "Infinix Note 12",
+            "price": 36999,
+            "description": "Infinix Note 12 price in Pakistan is Rs. 36,999. Official dealers and warranty providers regulate the retail price of Infinix mobile products in official warranty.",
+            "brand": "Infinix",
+            "image": "https://www.whatmobile.com.pk/admin/images/Infinix/InfinixNote12-b.jpg"
+        }, {
+            "id": 5,
+            "title": "Samsung Galaxy A13",
+            "price": 35499,
+            "description": "Samsung Galaxy A13 price in Pakistan is Rs. 35,499. Official dealers and warranty providers regulate the retail price of Samsung mobile products in official warranty.",
+            "brand": "Samsung",
+            "image": "https://www.whatmobile.com.pk/admin/images/Samsung/SamsungGalaxyA13-b.jpg"
+        }, {
+            "id": 6,
+            "title": "Xiaomi 12",
+            "price": 179999,
+            "description": "Xiaomi 12 price in Pakistan is Rs. 179,999. Official dealers and warranty providers regulate the retail price of Xiaomi mobile products in official warranty.",
+            "brand": "Xiaomi",
+            "image": "https://www.whatmobile.com.pk/admin/images/Xiaomi/Xiaomi12-b.jpg"
+        }, {
+            "id": 7,
+            "title": "Huawei Nova 9",
+            "price": 107999,
+            "description": "Huawei Nova 9 price in Pakistan is Rs. 107,999. Official dealers and warranty providers regulate the retail price of Huawei mobile products in official warranty.",
+            "brand": "Huawei",
+            "image": "https://www.whatmobile.com.pk/admin/images/Huawei/HuaweiNova9-b.jpg"
+        }, {
+            "id": 8,
+            "title": "Realme C35",
+            "price": 32999,
+            "description": "Realme C35 price in Pakistan is Rs. 32,999. Official dealers and warranty providers regulate the retail price of Realme mobile products in official warranty.",
+            "brand": "Realme",
+            "image": "https://www.whatmobile.com.pk/admin/images/Realme/RealmeC35-b.jpg"
+        }, {
+            "id": 9,
+            "title": "Tecno Spark 8C 3GB",
+            "price": 20499,
+            "description": "Tecno Spark 8C 3GB price in Pakistan is Rs. 20,499. Official dealers and warranty providers regulate the retail price of Tecno mobile products in official warranty.",
+            "brand": "Tecno",
+            "image": "https://www.whatmobile.com.pk/admin/images/Tecno/TecnoSpark8C3GB-b.jpg"
+        }, {
+            "id": 10,
+            "title": "itel Vision 3",
+            "price": 16299,
+            "description": "itel Vision 3 price in Pakistan is Rs. 16,299. Official dealers and warranty providers regulate the retail price of itel mobile products in official warranty.",
+            "brand": "Itel",
+            "image": "https://www.whatmobile.com.pk/admin/images/itel/itelVision3-b.jpg"
+        },]
