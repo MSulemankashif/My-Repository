@@ -1,0 +1,28 @@
+/* CSS for underline hover effect on footer text */
+footer a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+footer a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+    background: #7c4dff; /* Change the underline color on hover */
+}
+
+/* Optional: Change the text color on hover */
+footer a:hover {
+    color: #7c4dff;
+}
