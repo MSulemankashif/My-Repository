@@ -68,7 +68,7 @@
     box-shadow: 0 10px 12px 0 rgba(0,0,0,.2);
  }
  .card:hover{
-    box-shadow: 0 13px 40px 0 rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.2);
  }
   /* General styles for the navigation bar */
   .navbar {
