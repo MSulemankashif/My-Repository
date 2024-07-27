@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Dropdown on Hover</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS to enable hover effect */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* optional: adjust to remove the gap between the dropdown and the navbar */
+        }
+        .ci--arrow-right-md {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 12h14m0 0l-6-6m6 6l-6 6'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+    </style>
+    
+</head>
+<body>
+    <!-- <span class="ci--arrow-right-md"></span> -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" height="50">
+        <radialGradient id="a1" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)">
+          <stop offset="0" stop-color="#0E0D0D"></stop>
+          <stop offset=".3" stop-color="#0E0D0D" stop-opacity=".9"></stop>
+          <stop offset=".6" stop-color="#0E0D0D" stop-opacity=".6"></stop>
+          <stop offset=".8" stop-color="#0E0D0D" stop-opacity=".3"></stop>
+          <stop offset="1" stop-color="#0E0D0D" stop-opacity="0"></stop>
+        </radialGradient>
+        <circle transform-origin="center" fill="none" stroke="url(#a1)" stroke-width="15" stroke-linecap="round" stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70">
+          <animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform>
+        </circle>
+        <circle transform-origin="center" fill="none" opacity=".2" stroke="#0E0D0D" stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70"></circle>
+      </svg>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Programs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Bano Qabil Training Program</a>
+                        <a class="dropdown-item" href="#">Orphan Care</a>
+                        <a class="dropdown-item" href="#">Health Services</a>
+                        <a class="dropdown-item" href="#">Disaster Management</a>
+                        <a class="dropdown-item" href="#">Wash Program</a>
+                        <a class="dropdown-item" href="#">Community Services</a>
+                        <a class="dropdown-item" href="#">Microfinance</a>
+                        <a class="dropdown-item" href="#">Education</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ways to Donate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Become a Volunteer</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
