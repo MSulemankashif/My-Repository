@@ -1,0 +1,48 @@
+.container
+{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px;
+}
+.nav-link
+{
+    color: blue;
+}
+body
+{
+    color: blue;
+}
+.nav-link {
+    color: #2851A3 !important;
+    font-weight: bold;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.notification-bar {
+    background-color: #babefd; /* Light blue background */
+    color: #1c3d5a; /* Dark blue text color */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid #1c3d5a; /* Dark blue bottom border */
+    margin-left: 12px;
+    margin-right: 12px;
+    /* border-radius: 15px; */
+}
+@media(max-width:1029px)
+{
+    .box
+    {
+
+    }
+}
+#navbarnav
+{
+    float: right;
+}
