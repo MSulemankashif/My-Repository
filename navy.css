@@ -1,49 +1,196 @@
-.container
-{
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 20px;
-    margin: 10px;
+/* Global Styles */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.nav-link
-{
-    color: blue;
+
+body {
+  font-family: 'Poppins';
+  background-color: #fff;
+  margin: 10px 40px;
+  padding: 0;
+  overflow-x: hidden;
 }
-body
-{
-    color: blue;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
 }
+
+/* Navigation Bar */
+
+.navbar {
+  background-color: blue;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.navbar-brand {
+  color: rgb(179, 195, 245);
+  font-size: 40px;
+}
+
 .nav-link {
-    color: #2851A3 !important;
-    font-weight: bold;
+  color: #2851A3 !important;
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem 1rem;
 }
-.nav-link {
-    display: block;
-    padding: .5rem 1rem;
+
+.navbar-nav {
+  float: right;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+
+/* Notification Bar */
+
 .notification-bar {
-    background-color: #babefd; /* Light blue background */
-    color: #1c3d5a; /* Dark blue text color */
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    border-bottom: 2px solid #1c3d5a; /* Dark blue bottom border */
-    margin-left: 12px;
-    margin-right: 12px;
-    /* border-radius: 15px; */
+  background-color: #babefd;
+  color: #1c3d5a;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid #1c3d5a;
+  margin-left: 12px;
+  margin-right: 12px;
 }
-/* @media(max-width:992px)
-{
-    .collapse
-    {
-        display: block;
-    }
+
+/* Video Container */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-container video {
+  width: 98%;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+/* Latest Ad Section */
+
+.latest-ad {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  background-color: #e1ebef;
+}
+
+.latest-ad h1, h2, h3, h4 {
+  text-align: center;
+}
+
+/* Card Section */
+
+.card-box {
+    display: table-row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 5px 7px 9px -4px rgb(52 51 51);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 330px;
+  }
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 1.5s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  opacity: 1;
+}
+
+/* News Slider */
+
+#newsSlider .carousel-item {
+  height: 300px;
+}
+
+#newsSlider .carousel-item img {
+  object-fit: cover;
+}
+
+#newsSlider .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 20px;
+  color: white;
+}
+
+/* Media Queries */
+
+/* @media (max-width: 1440px) {
+  .card {
+    width: 180px;
+  }
+}
+
+/* @media (max-width: 1024px) {
+  .card {
+    width: 150px;
+    height: 300px;
+  }
 } */
 
-#navbarnav
-{
-    float: right;
+/* @media (max-width: 768px) {
+  .card {
+    width: 120px;
+    height: 250px;
+  }
 }
+
+@media (max-width: 480px) {
+  .card {
+    width: 100px;
+    height: 200px;
+  }
+} */
+/* Add media query to adjust card layout for 1024px screen */
+ /* @media (max-width: 1024px) {
+    .card-box {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 100px; 
+      margin: 10px;
+    }
+  }       */ 
