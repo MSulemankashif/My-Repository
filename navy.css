@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
+  float: left;
 }
 
 /* Navigation Bar */
