@@ -1,11 +1,36 @@
 // Declare Variables
-namee='Suleman'
-age = 20
+/*  const namee='Suleman';
 
-a=null
+    age = 20
+ 
+     a=null
+ 
+ 
+ console.log(namee);
+ console.log(a);
+ console.log(age);
+ */
+
+ const student = 
+ {
+    namee:"Suleman",
+    age:20,
+    Class:"12th",
+    ispass:true
+
+ };
+ const profile =
+ {
+    username:"MShahSuleman",
+    followers:'596K',
+    following:4,
+    isFollow:true,
+    posts:195
 
 
+ };
+ console.log(profile['username'])
 
 
-console.log(a);
-console.log(age);
+//  student['namee'] = "Suleman Shah";
+//  console.log(student['namee']);
