@@ -25,7 +25,7 @@
 //     followers:'596K',
 //     following:4,
 //     isFollow:true,
-//     posts:195
+   //  posts:195
 
 
 //  };
@@ -39,9 +39,62 @@
 //  student['namee'] = "Suleman Shah";
 //  console.log(student['namee']);
 
-let a = 5;
-let b = 6;
+// let classstudents = 
+// {
+//    name:'Suleman',
+//    age:20,
+//    class:10,
+//    isFollow:true
+// };
+
+// console.log(classstudents['name']);
+
+// let a = 5;
+// let b = 6;
  
-let cond1 = a  < b; //True 
-let cond2 = a == 5; 
-console.log('cond1 && cond2', cond1 && cond2);
+// let cond1 = a  < b; //True 
+// let cond2 = a == 5; 
+// console.log('cond1 && cond2', cond1 && cond2);
+
+//Conditional Statements
+
+// let mode = "Dark";
+// let color;
+
+// if (mode == "dark")
+// {
+//    color="black"
+// }
+
+// if (mode == "Dark")
+// {
+//    color="black"
+// }
+// if (mode == "Light")
+//    {
+//       color="White"
+//    }
+//    console.log(color);
+   
+let age = 20;
+if (age >= 18)
+{
+   console.log("You are Eigiable for Lisence");
+}
+else
+{
+   console.log("You are Not Eligable for Lisence");   
+};
+
+let num = 8;
+
+if (num % 2 === 0)
+{
+   console.log( num ,'is even');
+   
+}
+else
+{
+   console.log( num ," is Odd");
+   
+}
