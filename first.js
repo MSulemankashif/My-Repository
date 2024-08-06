@@ -76,17 +76,17 @@
 //    }
 //    console.log(color);
    
-let age = 20;
+let age = 18;
 if (age >= 18)
 {
-   console.log("You are Eigiable for Lisence");
+   console.log("You are Eligable for Lisence");
 }
 else
 {
    console.log("You are Not Eligable for Lisence");   
 };
 
-let num = 8;
+let num = 23;
 
 if (num % 2 === 0)
 {
@@ -96,5 +96,20 @@ if (num % 2 === 0)
 else
 {
    console.log( num ," is Odd");
+   
+}
+if (age <= 18)
+{
+   console.log("Junior");
+
+}
+else if (age >= 60)
+{
+   console.log("Senior");
+   
+}
+else
+{
+   console.log("Middle");
    
 }
