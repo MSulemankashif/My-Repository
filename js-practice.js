@@ -29,5 +29,6 @@ let cond2 = a > b;
 //     document.write(std + "<br>");
 // });
 
+//Ternary Operators
 let result = age >= 18 ? "adult" : "not adult";
 console.log(result);
