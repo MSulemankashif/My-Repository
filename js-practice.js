@@ -1,8 +1,8 @@
-// for(i = 1; i <= 100; i++)
-// {
-//     console.log(i , " :Suleman" , "<br>");
+for(i = 1; i <= 100; i++)
+{
+    document.write(i , " : Suleman" , "<br>");
     
-// }
+}
 let namee = "Suleman"
 let age = 18
 
