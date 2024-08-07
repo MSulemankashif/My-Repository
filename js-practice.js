@@ -1,18 +1,17 @@
-
 // for(i = 1; i <= 100; i++)
 // {
 //     console.log(i , " :Suleman" , "<br>");
     
 // }
-let namee = "Suleman";
+let namee = "Suleman"
 let age = 20
 
 // document.write("Hello <b>" + namee  + "</b> thank you for contacting us (your age is) " + age + " we will be back as soon as possible ...")
 
 
-let a = 10;
-let b = 9;
-let c = 10;
+let a = 10
+let b = 9
+let c = 10
 
 let cond1 = a === b;
 let cond2 = a > b;
