@@ -18,7 +18,7 @@ let cond2 = a > b;
 
 // console.log(cond1 && cond2);    // Logical And Operator
 // console.log(cond1 || cond2);    //Logical OR
-//  console.log(cond1 != cond2);    //Logical NOT
+ // console.log( ! (a > b) );    //Logical NOT
 
 
 //Loops
