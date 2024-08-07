@@ -4,7 +4,7 @@
     
 // }
 let namee = "Suleman"
-let age = 20
+let age = 18
 
 // document.write("Hello <b>" + namee  + "</b> thank you for contacting us (your age is) " + age + " we will be back as soon as possible ...")
 
@@ -23,8 +23,11 @@ let cond2 = a > b;
 
 //Loops
 
-let stds = ["Ali", "Usama", "Asad"];
+// let stds = ["Ali", "Usama", "Asad"];
 
-stds.forEach(function(std) {
-    document.write(std + "<br>");
-});
+// stds.forEach(function(std) {
+//     document.write(std + "<br>");
+// });
+
+let result = age >= 18 ? "adult" : "not adult";
+console.log(result);
