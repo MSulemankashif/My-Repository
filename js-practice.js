@@ -47,31 +47,51 @@ let cond2 = a > b;
 //     console.log(num, "is not a mutiple of 5");
 // }
 
-let score = prompt("Enter Your Marks" )
-let grade;
+// let score = prompt("Enter Your Marks" )
+// let grade;
 
-if (score >= 90 && score <=100 )
-{
-    grade="A";
-}else if (score >= 70 && score <= 89)
-{
-    grade = "B";
-}
-else if (score >= 50 && score <= 69)
-    {
-        grade = "C";
-    }
-else if (score >= 30 && score <= 49)
-{
-    grade = "D";
-}
-else
-{
-    console.log("Please Enter Corect Marks");
+// if (score >= 90 && score <=100 )
+// {
+//     grade="A";
+// }else if (score >= 70 && score <= 89)
+// {
+//     grade = "B";
+// }
+// else if (score >= 50 && score <= 69)
+//     {
+//         grade = "C";
+//     }
+// else if (score >= 30 && score <= 49)
+// {
+//     grade = "D";
+// }
+// else
+// {
+//     console.log("Please Enter Corect Marks");
     
+// }
+
+// document.write("your Grade is ", grade ," According to your percenteage" );
+let sum1 = 0
+
+// for (let i = 1 ; i<=5;i++){
+//     sum1 = sum1 + i ;
+// }
+// console.log("Sum is",sum1);
+let password = "Sulemanshah";
+let pass = "";
+
+// Keep asking for the password until the user enters a non-empty value
+while (pass === "") {
+    pass = prompt("Enter Your Password (required)");
 }
 
-document.write("your Grade is ", grade ," According to your percenteage" );
+if (pass === password) {
+    alert("Welcome");
+} else {
+    alert("Incorrect Username or Password");
+}
+
 
 
 
