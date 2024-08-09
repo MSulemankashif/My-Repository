@@ -81,7 +81,6 @@ let sum1 = 0
 let password = "Sulemanshah";
 let pass = "";
 
-// Keep asking for the password until the user enters a non-empty value
 while (pass === "") {
     pass = prompt("Enter Your Password (required)");
 }
