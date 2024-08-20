@@ -78,18 +78,48 @@ let sum1 = 0
 //     sum1 = sum1 + i ;
 // }
 // console.log("Sum is",sum1);
-let password = "Sulemanshah";
-let pass = "";
+// let password = "Sulemanshah";
+// let pass = "";
 
-while (pass === "") {
-    pass = prompt("Enter Your Password (required)");
-}
+// while (pass === "") {
+//     pass = prompt("Enter Your Password (required)");
+// }
 
-if (pass === password) {
-    alert("Welcome");
-} else {
-    alert("Incorrect Username or Password");
-}
+// if (pass === password) {
+//     alert("Welcome");
+// } else {
+//     alert("Incorrect Username or Password");
+// }
+
+// for(num=0; num<=100;num++)
+// {
+//     if(num%2 === 0)
+//         {
+//             console.log("Even num is", num);
+            
+//         }    
+// }   
+
+// let gameNum = 30;
+
+// let userNum = prompt("Guess the Correct Number :");
+
+// while(userNum != gameNum)
+// {
+//     userNum = prompt("You Entered Wrong Number");
+// }
+// console.log("You entered Correct Number");
+
+
+// let gameNum = 30;
+
+// let userNum = prompt("Guess the Correct Number :");
+
+// while (userNum !== gameNum) {
+//     userNum = Number(prompt("You entered the wrong number. Try again:"));
+// }
+
+// console.log("You entered the correct number!");
 
 
 

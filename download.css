@@ -1,0 +1,65 @@
+img:hover
+ {
+    box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+
+.card-container
+  {
+    box-shadow: none;
+    transition: 1s;
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    flex-direction: row;
+}
+
+    img
+    {
+        transition: 1s;
+    }
+.card-container {
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    .card-container img:hover
+    {
+        transform: scale(105%);
+        transition: 2s;
+    }
+@media(max-width:885px)
+{
+    img
+    {
+        height: 200px;
+        width: 250px;
+    }
+}
+@media(max-width:585px)
+{
+    img
+    {
+        height: 120px;
+        width: 180px;
+    }
+}
+@media(max-width:425px)
+{
+    img
+    {
+        height: 90px;
+        width: 110px;
+    }
+}
+@media(max-width:440px)
+{
+    img
+    {
+        height: 70px;
+        width: 110px;
+    }
+}
