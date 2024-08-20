@@ -1,0 +1,39 @@
+
+.flexer-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 39px;
+    margin: 20px;
+}
+.card
+{
+    height: 250px;
+    width: 250px;
+    align-self: auto;
+    /* background-color: darkblue; */
+    border-radius: 8px;
+}
+@media(max-width:650px)
+{
+    p
+    {
+        font-size: 10px;
+    }
+    h5
+    {
+        font-size: 15px;
+    }
+    .btn
+   {
+    font-size: 11px;
+   }
+   .card
+   {
+    height: 310px;
+    width: auto;
+   }
+}
