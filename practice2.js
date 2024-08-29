@@ -27,12 +27,16 @@ let obj = {
 // console.log(username.toLowerCase());
 // console.log(username.trim());
 
-let usernamee = prompt("Enter Your First Name");
-let lastname = prompt("Enter Your Last Name");
+// let usernamee = prompt("Enter Your First Name");
+// let lastname = prompt("Enter Your Last Name");
 
-let fullName = usernamee + lastname;
-console.log("Your Username is", "@"+usernamee+lastname+fullName.length);
+// let fullName = usernamee + lastname;
+// console.log("Your Username is", "@"+usernamee+lastname+fullName.length);
 
+// Arrays
+let marks = [97,32,45,76,80];
+
+console.log(marks);
 
 
 
