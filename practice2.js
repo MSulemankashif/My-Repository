@@ -34,14 +34,32 @@ let obj = {
 // console.log("Your Username is", "@"+usernamee+lastname+fullName.length);
 
 // Arrays
-let marks =[90,95,85,60,70,82];
+// let stdMarks = prompt("Enter Your Total Marks");
 
-for(let idx = 0;idx<marks.length;idx++)
-{
-    console.log(marks[idx]);
+// let marks =[stdMarks]
+
+// for(let idx=0;idx<marks.length;idx++)
+// {
+//     console.log(marks);
     
+// }
+
+// let cities = ["karachi","hyderabad","lahore","islamabad"];
+// for(let city of cities)
+// {
+//     console.log(city.toUpperCase());
+    
+// }
+
+let marks = [98,56,78,67,89,77];
+let sum =0;
+
+for(let val of marks)
+{
+    sum += val;
 }
 
+let avg = sum / marks.length;
 
-
+console.log(`The average of class marks is = ${avg}`);
 
