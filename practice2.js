@@ -19,13 +19,20 @@ let obj = {
 
 // console.log(str1,str2);
 
-let username = "Suleman Kashif";
+// let username = "Suleman Kashif";
 
     "String Methods"
 // console.log(username.replace("Su","li"));
 // console.log(username.toUpperCase());
 // console.log(username.toLowerCase());
 // console.log(username.trim());
+
+let usernamee = prompt("Enter Your First Name");
+let lastname = prompt("Enter Your Last Name");
+
+let fullName = usernamee + lastname;
+console.log("Your Username is", "@"+usernamee+lastname+fullName.length);
+
 
 
 
