@@ -34,12 +34,13 @@ let obj = {
 // console.log("Your Username is", "@"+usernamee+lastname+fullName.length);
 
 // Arrays
-let marks = [97,32,45,76,80];
+let marks =[90,95,85,60,70,82];
 
-console.log(marks);
-
-
-
+for(let idx = 0;idx<marks.length;idx++)
+{
+    console.log(marks[idx]);
+    
+}
 
 
 
