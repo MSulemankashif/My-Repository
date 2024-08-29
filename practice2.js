@@ -21,7 +21,14 @@ let obj = {
 
 let username = "Suleman Kashif";
 
-console.log(username.replace("Su","LI"));
+    "String Methods"
+// console.log(username.replace("Su","li"));
+// console.log(username.toUpperCase());
+// console.log(username.toLowerCase());
+// console.log(username.trim());
+
+
+
 
 
 
