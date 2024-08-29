@@ -51,15 +51,40 @@ let obj = {
     
 // }
 
-let marks = [98,56,78,67,89,77];
-let sum =0;
+// let marks = [98,56,78,67,89,77];
+// let sum =0;
 
-for(let val of marks)
+// for(let val of marks)
+// {
+//     sum += val;
+// }
+
+// let avg = sum / marks.length;
+
+// console.log(`The average of class marks is = ${avg}`);
+
+// let items = [250,645,300,900,50];
+// let i=0;
+// for(let val of items)
+// {
+//     console.log(`The value at ${i} index is ${val}`);
+//     let offer = val/10;
+//     items[i] = items[i] - offer;
+//     console.log(`Value After Offer = ${items[i]}`);
+//     i++  
+// }
+
+let items = [250,645,300,900,50];
+let i=0;
+
+for (let val of items)
 {
-    sum += val;
+    console.log(`The Value at ${i} index is ${val}`);
+    let offer = val/10;
+    items[i]= items[i] - offer 
+    console.log(`After offer the price is ${items[i]}`);
+    
+    i++
+    
 }
-
-let avg = sum / marks.length;
-
-console.log(`The average of class marks is = ${avg}`);
 
