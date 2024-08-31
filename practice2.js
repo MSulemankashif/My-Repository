@@ -74,17 +74,27 @@ let obj = {
 //     i++  
 // }
 
-let items = [250,645,300,900,50];
-let i=0;
+// let items = [250,645,300,900,50];
+// let i=0;
 
-for (let val of items)
+// for (let val of items)
+// {
+//     console.log(`The Value at ${i} index is ${val}`);
+//     let offer = val/10;
+//     items[i]= items[i] - offer 
+//     console.log(`After offer the price is ${items[i]}`);
+//     i++
+    
+// }
+
+let items = [250,645,300,900,50]
+let i =0;
+
+for(let val of items)
 {
-    console.log(`The Value at ${i} index is ${val}`);
-    let offer = val/10;
-    items[i]= items[i] - offer 
+    // console.log(`The Value at ${i} index is ${val}`);
+    let offer= val/10;
+    items[i]= items[i] - offer
     console.log(`After offer the price is ${items[i]}`);
-    
     i++
-    
 }
-
