@@ -87,14 +87,54 @@ let obj = {
     
 // }
 
-let items = [250,645,300,900,50]
-let i =0;
+// let items = [250,645,300,900,50] 
+// let i =0;
 
-for(let val of items)
+// for(let val of items)
+// {
+//     // console.log(`The Value at ${i} index is ${val}`);
+//     let offer= val/10;
+//     items[i]= items[i] - offer
+//     console.log(`After offer the price is ${items[i]}`);
+//     i++
+// }
+
+// Array Methods
+// let veges = ["Tomato","Potato","Reddish"];
+
+// veges.push("Chips","Onion");
+// console.log(veges);
+
+// let var1 = ["Suleman","Ali","Ahmed","Zaka"];
+// let var2 = ["Waleed","Haneef"];
+
+// let result = [var1.concat(var2)];
+// console.log(result);
+
+// let items = [250,645,300,900,50];
+// let i =0;
+// for(val of items)
+// {
+//     console.log(`The value at ${i} index is ${val}`);
+//     i++
+// }
+
+//  Practice 
+// let comp = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+// comp.splice(2,1,"Ola");
+// // comp.push("Amazon")
+// console.log(comp);
+
+function myFunction()
 {
-    // console.log(`The Value at ${i} index is ${val}`);
-    let offer= val/10;
-    items[i]= items[i] - offer
-    console.log(`After offer the price is ${items[i]}`);
-    i++
+    console.log("Welcome to my Website");
+    
 }
+
+myFunction();
+myFunction();
+myFunction();
+myFunction();
+myFunction();
+
