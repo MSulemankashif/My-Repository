@@ -126,15 +126,14 @@ let obj = {
 // // comp.push("Amazon")
 // console.log(comp);
 
+
+// Functions 
+
 function myFunction()
 {
     console.log("Welcome to my Website");
     
 }
 
-myFunction();
-myFunction();
-myFunction();
-myFunction();
-myFunction();
+
 
