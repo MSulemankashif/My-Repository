@@ -129,11 +129,103 @@ let obj = {
 
 // Functions 
 
-function myFunction()
+// function myFunction()
+// {
+//     console.log("Welcome to my Website");
+    
+// }
+
+// For of Loop
+// for(let val of items)
+// {
+//     // console.log(`The value at ${i} index is ${val}`);
+//     let offer = val/10
+//     items[i] = items[i]-offer
+//     console.log(`The value after Discount is rs ${items[i]}`);
+//     i++
+// }
+
+// For Loop
+
+// for (i=0; i<items.length;i++)
+// {
+//     console.log(items[i]);
+    
+// }
+
+// let pass = "2ba55bb3";
+
+// while(true)
+// {
+//     userPass= prompt("Enter Your Password");
+
+//     if (userPass===pass)
+//     {
+//         window.location.href="https://github.com/MShahSuleman/"
+//         break;
+//     }
+//     else
+//     {
+//         alert("Re enter your Password");
+//     }
+// }
+
+// let num = 0;
+
+// while(num <= 110)
+// {
+//     console.log(num);
+//     num++;
+    
+// }
+// console.log("Counting Complete");
+
+"Arrow Function"
+// const arrowMul =(a,b) =>
+// {
+//     console.log(a*b);
+    
+// }
+
+"Let's Practice"
+
+let str = prompt("Enter Your name");
+function countVol(str)
 {
-    console.log("Welcome to my Website");
+    count=0;
+    for(let val of str)
+    {
+        if(val==="a" ||
+           val==="e" ||
+           val==="i" ||
+           val==="o" ||
+           val==="u"    
+          )
+            {
+                count++
+            }
+    }
+    console.log(count);
     
 }
 
+console.log(countVol(str));
 
-
+"Using Arrow Function"
+const countvlo=(stro) =>
+{
+    count=0;
+    for(let val of str)
+    {
+        if(val==="a" ||
+           val==="e" ||
+           val==="i" ||
+           val==="o" ||
+           val==="u"    
+          )
+            {
+                count++
+            }
+    }
+    console.log(count);
+}
