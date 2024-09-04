@@ -1,0 +1,17 @@
+body
+{
+    background-color: pink;
+}
+h1 
+{
+    text-align: center;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 8px;
+}
+p
+{
+    text-align: justify;
+    margin: 15px;
+}
