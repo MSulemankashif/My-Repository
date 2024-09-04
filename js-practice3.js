@@ -59,8 +59,8 @@ let array = [2,4,6,8,10,11,12,13];
 // }
 // console.log(arr);
 
-let sum = 0
-let nums = [90,88,78,88,97]
+let sum = 0;
+let nums = [90,88,78,88,97];
 for(let val of nums)
 {
     sum +=val
