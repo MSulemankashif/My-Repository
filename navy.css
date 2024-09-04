@@ -1,5 +1,4 @@
 /* Global Styles */
-
 *,
 ::after,
 ::before {
@@ -16,8 +15,8 @@ body {
   overflow-x: hidden;
   
 }
-
-.container {
+.container 
+{
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -26,7 +25,6 @@ body {
 }
 
 /* Navigation Bar */
-
 .navbar {
   background-color: blue;
   padding: 10px;
@@ -53,7 +51,6 @@ body {
 }
 
 /* Notification Bar */
-
 .notification-bar {
   background-color: #babefd;
   color: #1c3d5a;
@@ -64,7 +61,6 @@ body {
   margin-left: 12px;
   margin-right: 12px;
 }
-
 /* Video Container */
 
 .video-container {
@@ -80,7 +76,6 @@ body {
 }
 
 /* Latest Ad Section */
-
 .latest-ad {
   display: flex;
   justify-content: center;
@@ -92,7 +87,6 @@ body {
 .latest-ad h1, h2, h3, h4 {
   text-align: center;
 }
-
 /* Card Section */
 
 .card-box {
@@ -142,7 +136,6 @@ body {
 }
 
 /* News Slider */
-
 #newsSlider .carousel-item {
   height: 300px;
 }
