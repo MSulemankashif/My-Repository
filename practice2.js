@@ -189,43 +189,44 @@ let obj = {
 
 "Let's Practice"
 
-let str = prompt("Enter Your name");
-function countVol(str)
-{
-    count=0;
-    for(let val of str)
-    {
-        if(val==="a" ||
-           val==="e" ||
-           val==="i" ||
-           val==="o" ||
-           val==="u"    
-          )
-            {
-                count++
-            }
-    }
-    console.log(count);
+// let str= prompt("Enter Your Name");
+// function countVow(str)
+// {
+//     count=0
+//     for(let val of str)
+//     {
+//         if( val==="a" ||
+//             val==="e" ||
+//             val==="i" ||
+//             val==="o" ||
+//             val==="u"
+//         )
+        
+//         {
+//             count++
+//         }
+//     }
+//     console.log(count);
     
-}
+// }
 
-console.log(countVol(str));
+// console.log(countVow(str));
 
-"Using Arrow Function"
-const countvlo=(stro) =>
-{
-    count=0;
-    for(let val of str)
-    {
-        if(val==="a" ||
-           val==="e" ||
-           val==="i" ||
-           val==="o" ||
-           val==="u"    
-          )
-            {
-                count++
-            }
-    }
-    console.log(count);
-}
+// "Using Arrow Function"
+// const countvlo=(stro) =>
+// {
+//     count=0;
+//     for(let val of str)
+//     {
+//         if(val==="a" ||
+//            val==="e" ||
+//            val==="i" ||
+//            val==="o" ||
+//            val==="u"    
+//           )
+//             {
+//                 count++
+//             }
+//     }
+//     console.log(count);
+// }
