@@ -33,11 +33,38 @@ let array = [2,4,6,8,10,11,12,13];
 // console.log(evenArr);
 
 "Average Of class Marks"
-let marks = [88,98,77,89]
+// let marks = [88,98,77,89,88,99]
+// let sum = 0
+// for(let val of marks)
+// {
+//     sum += val
+// }
+// let avg = sum / marks.length
+// console.log(`The Average of class marks is ${avg}`);
+
+"Let's Practice"
+// let stdMarks= [91,95,98,56,80];
+// let smarks= stdMarks.filter((val)=>
+// {
+//     return val >90
+// }
+// )
+// console.log(smarks);
+
+// let n = prompt("Enter A number");
+// let arr = []
+// for(let i = 1; i <= n;i++)
+// {
+//     arr[i-1] = i;
+// }
+// console.log(arr);
+
 let sum = 0
-for(let val of marks)
+
+let nums = [90,88,78,88,97]
+for(let val of nums)
 {
-    sum += val
+    sum +=val
 }
-let avg = sum / marks.length
-console.log(`The Average of class marks is ${avg}`);
+console.log(sum);
+
