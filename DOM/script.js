@@ -1,3 +1,1 @@
-console.dir(document.body);
-console.log(document.body);
-
+document.querySelector("div").children;
