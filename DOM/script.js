@@ -14,5 +14,10 @@
 // let h2 = document.querySelector("h2");
 // console.log(h2);
 
-let div = document.querySelectorall("box");
-console.dir(div);
+let divs = document.querySelectorAll(".box");
+let i = 0;
+for(let div of divs)
+{
+    div.innerText=`hello world from index ${i}`;
+    i++
+}
