@@ -14,10 +14,15 @@
 // let h2 = document.querySelector("h2");
 // console.log(h2);
 
-let divs = document.querySelectorAll(".box");
-let i = 0;
-for(let div of divs)
-{
-    div.innerText=`hello world from index ${i}`;
-    i++
-}
+// let div = document.querySelectorAll(".box");
+// let i=0;
+// for(let val of div)
+// {
+//     val.innerText=`Hello World from ${i}`;
+//     i++   
+// }
+
+// let para = document.querySelector("p");
+// console.log(para.setAttribute("lorem","new lorem"));
+// let div = document.querySelector(".box1");
+// div.style.backgroundcolor="red";
