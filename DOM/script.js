@@ -24,5 +24,19 @@
 
 // let para = document.querySelector("p");
 // console.log(para.setAttribute("lorem","new lorem"));
-// let div = document.querySelector(".box1");
-// div.style.backgroundcolor="red";
+// let div = document.querySelector("div");
+// div.style.backgroundColor="red";
+
+// let firstName = prompt ("Enter Your First name");
+// let lastName = prompt ("Enter Your last name");
+// let username=firstName+lastName;
+// document.writeln(`Your Username is <b> @${username}${username.length}</b>`)
+
+let btn = document.createElement("button");
+btn.innerText=("Click me");
+console.log(btn);
+let div = document.querySelector("div");
+div.append(btn);
+
+
+
