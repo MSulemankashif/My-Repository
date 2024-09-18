@@ -5,7 +5,6 @@
 //     console.log(val.toUpperCase(),index,arr);
 // }
 // )
-
 // arr.forEach((val,index)=>
 // { 
 //     console.log(index,val);
@@ -32,11 +31,16 @@
 // let username=firstName+lastName;
 // document.writeln(`Your Username is <b> @${username}${username.length}</b>`)
 
-let btn = document.createElement("button");
-btn.innerText=("Click me");
-console.log(btn);
-let div = document.querySelector("div");
-div.append(btn);
+// let btn = document.createElement("button"); 
+// btn.innerText=("Click me"); 
+// console.log(btn); 
+// let div = document.querySelector("div"); 
+// div.append(btn); 
+// let array =[2,4,6,8,10];
+// let square = (num)=>{
+//     document.writeln(num**2,"<br>");
+// }
+// array.forEach(square);
+let namee = prompt("Enter your Name");
 
-
-
+document.writeln(`Your Name is ${namee}`)
