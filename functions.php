@@ -1,9 +1,6 @@
 <?php
 
-function printName ($name)
+function printname ($name) 
 {
-
-    echo "Hello " . $name . "great to have you here";
+    echo "Hello <b>" . $name . "</b>Great to have you here";
 }
-
-printName('Suleman');

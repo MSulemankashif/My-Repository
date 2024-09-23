@@ -41,6 +41,10 @@
 //     document.writeln(num**2,"<br>");
 // }
 // array.forEach(square);
-let namee = prompt("Enter your Name");
-
-document.writeln(`Your Name is ${namee}`)
+let array=[2,4,6,8,10];
+let square = (num)=>
+    {
+        console.log(num**2);
+        
+    } 
+    array.forEach(square);
