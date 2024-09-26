@@ -41,10 +41,13 @@
 //     document.writeln(num**2,"<br>");
 // }
 // array.forEach(square);
-let array=[2,4,6,8,10];
-let square = (num)=>
-    {
-        console.log(num**2);
-        
-    } 
-    array.forEach(square);
+// let array=[2,4,6,8,10];
+// let square = (num)=>
+//     {
+//         console.log(num**2);
+//     } 
+//     array.forEach(square);
+
+let para =  document.querySelector("p");
+let a = para.classList.add("newId");
+

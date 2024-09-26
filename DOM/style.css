@@ -11,3 +11,21 @@ p
     text-align: justify;
     margin: 15px;
 }
+
+.newId
+{
+    background-color: red;
+    color: white;
+}
+.content
+{
+    font-size: 40px;
+}
+.event
+{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    border: 1px, solid;
+    margin: 10px;
+}
