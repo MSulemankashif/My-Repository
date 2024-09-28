@@ -48,6 +48,19 @@
 //     } 
 //     array.forEach(square);
 
-let para =  document.querySelector("p");
-let a = para.classList.add("newId");
+// let para =  document.querySelector("p");
+// let a = para.classList.add("newId")
 
+let btn1 = document.querySelector(".btn");
+
+let clickCount = 0; // Initialize a counter to track the number of clicks
+
+btn1.onclick = () => {
+  clickCount++;
+
+  if (clickCount === 1) {
+    btn1.innerText = "Clicked";
+  } else {
+    btn1.innerText = `Clicked ${clickCount} times`;
+  }
+};
