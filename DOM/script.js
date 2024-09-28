@@ -55,13 +55,13 @@ let btn1 = document.querySelector(".btn");
 
 let clickCount = 0; // Initialize a counter to track the number of clicks
 
-btn1.onclick=()=>
+btn1.onmouseover=()=>
 {
     clickCount++;
 
     if(clickCount === 1)
     {
-        btn1.innerText=("Clicked")
+        btn1.innerText=("Clicked 1 time")
     } else {
         btn1.innerText=(`Clicked ${clickCount} times`)
     }
