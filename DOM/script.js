@@ -51,18 +51,31 @@
 // let para =  document.querySelector("p");
 // let a = para.classList.add("newId")
 
-let btn1 = document.querySelector(".btn");
+let btn1 = document.querySelector('.btn');
 
-let clickCount = 0; // Initialize a counter to track the number of clicks
+// let clickCount = 0;
 
-btn1.onmouseover=()=>
+// btn1.onclick=()=>
+// {
+//     clickCount++;
+
+//     if(clickCount === 1)
+//     {
+//         btn1.innerText=(`Clicked 1 time`)
+//     } else {
+//         btn1.innerText=(`Clicked ${clickCount} times`)
+//     }
+// }
+
+let clickCount = 0;
+btn1.addEventListener("click", ()=>
 {
     clickCount++;
-
+    
     if(clickCount === 1)
     {
-        btn1.innerText=("Clicked 1 time")
+        btn1.innerText=(`Button is clicked`)
     } else {
-        btn1.innerText=(`Clicked ${clickCount} times`)
+        btn1.innerText=(`Button is clicked ${clickCount} times`)
     }
-}
+});
