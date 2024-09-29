@@ -74,8 +74,10 @@ btn1.addEventListener("click", ()=>
     
     if(clickCount === 1)
     {
-        btn1.innerText=(`Button is clicked`)
-    } else {
+        btn1.innerText=(`Button is clicked`);
+    } else if (clickCount>10) {
+        btn1.innerText=(`Clicked too many times`)
+    } else{
         btn1.innerText=(`Button is clicked ${clickCount} times`)
     }
 });
