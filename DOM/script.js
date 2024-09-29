@@ -81,3 +81,6 @@ btn1.addEventListener("click", ()=>
         btn1.innerText=(`Button is clicked ${clickCount} times`)
     }
 });
+let body = document.querySelector("body");
+
+body.style.backgroundColor="black";
