@@ -97,4 +97,10 @@ btn2.addEventListener("click",()=>
         body.style.color=("white");
 
     });
+let arr = ['karachi','lahore','islamabad','peshawar'];
+arr.forEach((val,index,array)=>
+{
+    console.log(index,val,array);
     
+});
+
