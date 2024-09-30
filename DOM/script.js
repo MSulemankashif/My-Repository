@@ -66,21 +66,35 @@ let btn1 = document.querySelector('.btn');
 //         btn1.innerText=(`Clicked ${clickCount} times`)
 //     }
 // }
-
-let clickCount = 0;
-btn1.addEventListener("click", ()=>
-{
-    clickCount++;
+    "Event Listners"
+// let clickCount = 0;
+// btn1.addEventListener("click", ()=>
+// {
+//     clickCount++;
     
-    if(clickCount === 1)
-    {
-        btn1.innerText=(`Button is clicked`);
-    } else if (clickCount>10) {
-        btn1.innerText=(`Clicked too many times`)
-    } else{
-        btn1.innerText=(`Button is clicked ${clickCount} times`)
-    }
-});
+//     if(clickCount === 1)
+//     {
+//         btn1.innerText=(`Button is clicked`);
+//     } else if (clickCount>10) {
+//         btn1.innerText=(`Clicked too many times`)
+//     } else{
+//         btn1.innerText=(`Button is clicked ${clickCount} times`)
+//     }
+// });
+    "For changing Background Color"
+let btn2 = document.querySelector('#bttn');
 let body = document.querySelector("body");
+btn1.addEventListener("click",()=>
+    {
+     body.style.backgroundColor=("white");
+     body.style.color=("black");
 
-body.style.backgroundColor="black";
+    });
+
+btn2.addEventListener("click",()=>
+    {
+        body.style.backgroundColor=("black");
+        body.style.color=("white");
+
+    });
+    
