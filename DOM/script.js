@@ -1,87 +1,6 @@
 
-// let arr = ["Karachi","Lahore","Islamabad","Peshawar"];
-
-// arr.forEach((val,index,arr) =>{
-//     console.log(val.toUpperCase(),index,arr);
-// }
-// )
-// arr.forEach((val,index)=>
-// { 
-//     console.log(index,val);
-// })
-
-// let h2 = document.querySelector("h2");
-// console.log(h2);
-
-// let div = document.querySelectorAll(".box");
-// let i=0;
-// for(let val of div)
-// {
-//     val.innerText=`Hello World from ${i}`;
-//     i++   
-// }
-
-// let para = document.querySelector("p");
-// console.log(para.setAttribute("lorem","new lorem"));
-// let div = document.querySelector("div");
-// div.style.backgroundColor="red";
-
-// let firstName = prompt ("Enter Your First name");
-// let lastName = prompt ("Enter Your last name");
-// let username=firstName+lastName;
-// document.writeln(`Your Username is <b> @${username}${username.length}</b>`)
-
-// let btn = document.createElement("button"); 
-// btn.innerText=("Click me"); 
-// console.log(btn); 
-// let div = document.querySelector("div"); 
-// div.append(btn); 
-// let array =[2,4,6,8,10];
-// let square = (num)=>{
-//     document.writeln(num**2,"<br>");
-// }
-// array.forEach(square);
-// let array=[2,4,6,8,10];
-// let square = (num)=>
-//     {
-//         console.log(num**2);
-//     } 
-//     array.forEach(square);
-
-// let para =  document.querySelector("p");
-// let a = para.classList.add("newId")
-
-let btn1 = document.querySelector('.btn');
-
-// let clickCount = 0;
-
-// btn1.onclick=()=>
-// {
-//     clickCount++;
-
-//     if(clickCount === 1)
-//     {
-//         btn1.innerText=(`Clicked 1 time`)
-//     } else {
-//         btn1.innerText=(`Clicked ${clickCount} times`)
-//     }
-// }
-    "Event Listners"
-// let clickCount = 0;
-// btn1.addEventListener("click", ()=>
-// {
-//     clickCount++;
-    
-//     if(clickCount === 1)
-//     {
-//         btn1.innerText=(`Button is clicked`);
-//     } else if (clickCount>10) {
-//         btn1.innerText=(`Clicked too many times`)
-//     } else{
-//         btn1.innerText=(`Button is clicked ${clickCount} times`)
-//     }
-// });
     "For changing Background Color"
+let btn1 = document.querySelector("#btn");
 let btn2 = document.querySelector('#bttn');
 let body = document.querySelector("body");
 btn1.addEventListener("click",()=>
@@ -93,14 +12,34 @@ btn1.addEventListener("click",()=>
 
 btn2.addEventListener("click",()=>
     {
-        body.style.backgroundColor=("black");
+        body.style.backgroundColor="#22231F";
         body.style.color=("white");
 
     });
-let arr = ['karachi','lahore','islamabad','peshawar'];
-arr.forEach((val,index,array)=>
-{
-    console.log(index,val,array);
+// let arr = ['karachi','lahore','islamabad','peshawar'];
+// arr.forEach((val,index,array)=>
+// {
+//     console.log(index,val,array);
     
-});
+// });
+
+    "String Methods in Javescript"
+
+let str = "Hello, World!";
+let str1 = "Hello,";
+let str2 = "World!";
+
+console.log(str.length);                  //Returns the Length of the String
+console.log(str.charAt(0));              //Returns the character at the specified index
+console.log(str.includes("World"));      //Returns True or False
+console.log(str.indexOf("World"));
+console.log(str.slice(0,5));            //Extracts a section of the string and returns it as a new  string
+console.log(str.substring(0,5));        //Similar to slice but cannot accept negative indices
+console.log(str.toUpperCase());         //Returns the strings converted to UpperCase
+console.log(str.toLowerCase());         // Returns the string converted to LowerCase
+console.log(str.trim());                // Removes whitespace from the beginning and end of the string
+console.log(str.replace("World","Javascript")); //Replace the first Occurrance of a specified value with another value
+console.log(str.split());               //Splits the strings into an array
+console.log(str1.concat(' ',str2));     //Concatenates the string arguments to the calling string 
+
 

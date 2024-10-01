@@ -1,10 +1,11 @@
-h1 
+.header 
 {
     text-align: center;
     background-color: yellow;
     border-radius: 10px;
     padding: 10px;
     margin: 8px;
+    
 }
 p
 {
@@ -27,5 +28,22 @@ p
     width: 150px;
     background-color: blue;
     border: 1px, solid;
+    margin: 10px;
+}
+.slider
+{
+    background-color: #ffC107;
+    height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 8px;
+}
+
+.pointer { cursor: pointer; }
+
+.dropdown
+{
+    display: flex;
+    justify-content: flex-end;
     margin: 10px;
 }
