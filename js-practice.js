@@ -121,7 +121,3 @@ let sum1 = 0
 
 // console.log("You entered the correct number!");
 
-
-
-
-
