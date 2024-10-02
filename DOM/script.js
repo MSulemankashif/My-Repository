@@ -6,12 +6,12 @@
 // }
 // )
 
-btn2.addEventListener("click",()=>
-    {
-        body.style.backgroundColor="#22231F";
-        body.style.color=("white");
+// btn2.addEventListener("click",()=>
+//     {
+//         body.style.backgroundColor="#22231F";
+//         body.style.color=("white");
 
-    });
+//     });
 // let arr = ['karachi','lahore','islamabad','peshawar'];
 // arr.forEach((val,index,array)=>
 // {
@@ -19,21 +19,27 @@ btn2.addEventListener("click",()=>
     
 // });
 
-
-
 // arr.forEach((val,index)=>
 // { 
 //     console.log(index,val);
 // })
 
-
 // let h2 = document.querySelector("h2");
 // console.log(h2);
 
-let divs = document.querySelectorAll(".box");
-let i = 0;
-for(let div of divs)
+let button = document.querySelector(".btn1");
+let button1 = document.querySelector(".btn2");
+let body = document.querySelector("body");
+
+button.addEventListener("click",()=>
 {
-    div.innerText=`hello world from index ${i}`;
-    i++
-}
+    body.style.backgroundColor="white";
+    body.style.color="black";
+})
+
+button1.addEventListener("click",()=>
+{
+    body.style.backgroundColor="black";
+    body.style.color="white";
+})
+
