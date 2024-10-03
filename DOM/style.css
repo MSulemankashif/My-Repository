@@ -1,5 +1,21 @@
-.div
+
+button
 {
-  display: flex;
-  justify-content: space-around;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 10px;
+}
+
+.dark
+{
+  background-color: rgb(43, 42, 42);
+  color: white;
+  transition: 1s;
+}
+
+.light
+{
+  background-color: white;
+  transition: 1s;
+color: black;
 }

@@ -1,0 +1,12 @@
+.container-fluid {
+    background-color: black;
+    height: 100px;
+    padding-top: 10px;
+    
+}
+
+.container-fluid h1 {
+    color: white;
+    text-align: center;
+    
+}
