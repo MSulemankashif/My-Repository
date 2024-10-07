@@ -10,4 +10,4 @@ arr.forEach((val,index)=>
 {
     console.log(index,val);
     
-})
+});
