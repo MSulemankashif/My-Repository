@@ -168,3 +168,28 @@ console.log(str.trim());                // Removes whitespace from the beginning
 console.log(str.replace("World","Javascript")); //Replace the first Occurrance of a specified value with another value
 console.log(str.split());               //Splits the strings into an array
 console.log(str1.concat(' ',str2));     //Concatenates the string arguments to the calling string 
+
+"Building Game"
+
+let choices = document.querySelectorAll(".choice");
+
+const genCompchoice = ()=>
+{
+    const options = ["rock","paper","scissors"];
+    const userIdx = Math.floor(Math.random()*3);
+    return options [userIdx];
+}
+const playGame = (userChoice) =>
+{
+    console.log(`User choice is ${userChoice}`);
+    const compchoice = genCompchoice();
+    console.log(`Comp choice is ${compchoice}`);
+};
+
+choices.forEach((choice)=>
+{
+    choice.addEventListener("click",()=> {
+    const userChoice = choice.getAttribute("id");
+    playGame(userChoice);
+    });
+});
