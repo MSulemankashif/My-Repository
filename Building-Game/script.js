@@ -1,10 +1,11 @@
-let choices = document.querySelectorAll(".choice");
-let msg = document.querySelector("#msg");
-let userScore =  0;
-let compScore = 0;
-
+"Accessing Nodes"
 let userScorepara =  document.querySelector("#user-score");
 let compScorepara = document.querySelector("#comp-score");
+let choices = document.querySelectorAll(".choice");
+let msg = document.querySelector("#msg");
+
+let userScore =  0;
+let compScore = 0;
 
 const genCompchoice = () =>
 {
