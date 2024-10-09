@@ -54,7 +54,7 @@ playGame=(userChoice)=>
         } else {
             userWin = compchoice ===  "rock"? true : false;
         }
-        showWinner(userWin,userChoice,compchoice)
+        showWinner(userWin,userChoice,compchoice);
     };
 };
 
