@@ -169,15 +169,15 @@ console.log(str.replace("World","Javascript")); //Replace the first Occurrance o
 console.log(str.split());               //Splits the strings into an array
 console.log(str1.concat(' ',str2));     //Concatenates the string arguments to the calling string 
 
-"Building Game"
-
-let choices = document.querySelectorAll(".choice");
-let msg = document.querySelector("#msg");
-let userScore =  0;
-let compScore = 0;
-
+    "Building Game"
+"Accessing Nodes"
 let userScorepara =  document.querySelector("#user-score");
 let compScorepara = document.querySelector("#comp-score");
+let choices = document.querySelectorAll(".choice");
+let msg = document.querySelector("#msg");
+
+let userScore =  0;
+let compScore = 0;
 
 const genCompchoice = () =>
 {
