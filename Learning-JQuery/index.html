@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="./src/style.css">
+<title>Learning-JQuery</title>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam, maxime iste consectetur necessitatibus eos in iure enim doloribus ipsa animi, autem suscipit omnis asperiores, inventore adipisci. Quasi, consectetur tenetur!</p>
+
+
+<button id="toggleButton">Hide Button</button>
+<button id="showBtn">Show Button</button>
+
+    <script src="./src/jquery-3.7.1.min.js"></script>
+    <script>
+        // console.log(`We are Using ${jQuery}`);
+        // $("p").click(function(){
+        //     $("p").hide();
+        // })
+        // $("p").click(function(){
+        //     alert(`Button is Clicked!`)
+        // })
+        $(document).ready(function(){
+            $("#toggleButton").click(function(){
+                $("p").hide(500);
+            });
+            $("#showBtn").click(function(){
+                $("p").show(500);
+            });
+        });
+
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
