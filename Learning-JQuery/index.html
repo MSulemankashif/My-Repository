@@ -12,15 +12,23 @@
 </head>
 <body>
     <h1>Learning JQuery</h1>
-
+    <button class="btn btn-outline-danger mt-3">Click me for changing Text</button>
     <script>
+
         $(document).ready(function(){
-            $("h1").hover(function(){
-                $(this).text("Hello");
-                $(this).css("cursor","pointer");
-            });
-        });
+
+            let originalText = $("h1").text();
         
+        $("button").click(function(){
+            let currentText = $("h1").text();
+            if(currentText === originalText){
+                $("h1").text("Text Changed").css("cursor","pointer");
+            } else{
+                $("h1").text(originalText).css("cursor","pointer");
+            }
+        });
+        });
+
     </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
