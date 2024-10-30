@@ -9,12 +9,29 @@
 <link rel="stylesheet" href="./src/style.css">
 <script src="./src/jquery-3.7.1.min.js"></script>
 <title>Learning-JQuery</title>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
 </head>
-<body>
+<body bgcolor="black">
     <h1>Learning JQuery</h1>
     <button class="btn btn-outline-danger mt-3">Click me for changing Text</button>
     <script>
-
+        $(document).ready(function(){
+            let originalText= $("h1").text();
+            $("button").click(function(){
+                let currentText=$("h1").text();
+                if(currentText===originalText)
+            {
+                $("h1").text("Text Changed").css("cursor","pointer");
+            } else{
+                jQuery(`h1`).text(originalText).css("cursor","pointer");
+            }
+            });
+        });
         
     </script>
 
