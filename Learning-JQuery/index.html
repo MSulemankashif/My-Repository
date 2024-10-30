@@ -7,46 +7,22 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="./src/style.css">
+<script src="./src/jquery-3.7.1.min.js"></script>
 <title>Learning-JQuery</title>
 </head>
 <body>
-    <h1>Learning jQuery</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam, maxime iste consectetur necessitatibus eos in iure enim doloribus ipsa animi, autem suscipit omnis asperiores, inventore adipisci. Quasi, consectetur tenetur!</p>
+    <h1>Learning JQuery</h1>
 
-
-<button id="toggleButton">Hide Button</button>
-<button id="showBtn">Show Button</button>
-
-    <script src="./src/jquery-3.7.1.min.js"></script>
     <script>
-        "Basic"
-        // console.log(`We are Using ${jQuery}`);
-        // $("p").click(function(){
-        //     $("p").hide();
-        // })
-        // $("p").click(function(){
-        //     alert(`Button is Clicked!`)
-        // })
-
-            "Show hide Element"
-        // $(document).ready(function(){
-        //     $("#toggleButton").click(function(){
-        //         $("p").hide(700);
-        //     });
-        //     $("#showBtn").click(function(){
-        //         $("p").show(500);
-        //     });
-        // });
-
-        "Applying CSS"
-        $("p").mouseenter(function(){
-            $(this).css("background-color","yellow");
+        $(document).ready(function(){
+            $("h1").hover(function(){
+                $(this).text("Hello");
+                $(this).css("cursor","pointer");
+            });
         });
-        $("p").mouseleave(function(){
-            $(this).css("background-color","white");
-        })
-
+        
     </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
