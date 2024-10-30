@@ -73,7 +73,20 @@
                 $("h1").css("cursor","pointer");
         });
         });
-        
+        $(document).ready(function(){
+
+const originalText = $("h1").text();
+
+$("button").click(function(){
+let currentText = $("h1").text();
+if(currentText === originalText){
+    $("h1").text("Text Changed").css("cursor","pointer");
+} else{
+    $("h1").text(originalText).css("cursor","pointer");
+}
+});
+});
+
         </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
