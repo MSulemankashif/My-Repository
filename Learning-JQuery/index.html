@@ -10,29 +10,57 @@
 <script src="./src/jquery-3.7.1.min.js"></script>
 <title>Learning-JQuery</title>
 <style>
-    body{
+    /* body{
         background-color: black;
         color: white;
-    }
+    } */
 </style>
 </head>
 <body>
     <h1>Learning JQuery</h1>
-    <button class="btn btn-outline-danger mt-3">Click me for changing Text</button>
+    <button class="btn btn-outline-danger mt-3">Click me for changing Theme</button>
     <script>
-        $(document).ready(function(){
-            let originalText= $("h1").text();
-            $("button").click(function(){
-                let currentText=$("h1").text();
-                if(currentText===originalText)
-            {
-                $("h1").text("Text Changed").css("cursor","pointer");
-            } else{
-                jQuery(`h1`).text(originalText).css("cursor","pointer");
-            }
-            });
-        });
+        // $(document).ready(function(){
+        //     let originalText= $("h1").text();
+        //     $("button").click(function(){
+        //         let currentText=$("h1").text();
+        //         if(currentText===originalText)
+        //     {
+        //         $("h1").text("Text Changed").css("cursor","pointer");
+        //     } else{
+        //         jQuery(`h1`).text(originalText).css("cursor","pointer");
+        //     }
+        //     });
+        // });
         
+        // $(document).ready(function(){
+        //     let originalText = $(`h1`).text();
+        // $("button").click(function(){
+        //     let currentText=$("h1").text();
+        //     if(currentText===originalText){
+        //         $("h1").text("Text Changed").css("cursor","pointer");
+        //     } else{
+        //         $("h1").text(originalText)
+        //     }
+        // })            
+        // });
+
+        $(document).ready(function(){
+            let backGround = "white";
+        $("button").click(function(){
+            if(backGround==="white"){
+                backGround="black";
+                $("body").css("background-color","black");
+                $("body").css("color","#ffff");
+            }else{
+                backGround="white";
+                $("body").css("background-color","#ffff");
+                $("body").css("color","black");
+            }
+            console.log(backGround);
+            
+        })
+        })
     </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
