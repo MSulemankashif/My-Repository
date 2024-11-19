@@ -45,22 +45,31 @@
         // })            
         // });
 
-        $(document).ready(function(){
-            let backGround = "white";
-        $("button").click(function(){
-            if(backGround==="white"){
-                backGround="black";
-                $("body").css("background-color","black");
-                $("body").css("color","#ffff");
-            }else{
-                backGround="white";
-                $("body").css("background-color","#ffff");
-                $("body").css("color","black");
-            }
-            console.log(backGround);
-            
-        })
-        })
+        // $(document).ready(function(){
+        //     let backGround = "white";
+        // $("button").click(function(){
+        //     if(backGround==="white"){
+        //         backGround="black";
+        //         $("body").css("background-color","black");
+        //         $("body").css("color","#ffff");
+        //     }else{
+        //         backGround="white";
+        //         $("body").css("background-color","#ffff");
+        //         $("body").css("color","black");
+        //     }
+        //     console.log(backGround);
+        // });
+        // });
+
+        let btn = document.querySelector('.btn');
+
+        btn.addEventListener("click",()=>{
+            let button =btn.innerText;
+            btn.innerText="Hello World!";
+            console.log(button);
+             
+        });
+
     </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
