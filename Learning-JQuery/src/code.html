@@ -14,62 +14,18 @@
     <h1>Learning jQuery</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam, maxime iste consectetur necessitatibus eos in iure enim doloribus ipsa animi, autem suscipit omnis asperiores, inventore adipisci. Quasi, consectetur tenetur!</p>
     
-    
     <button id="toggleButton">Hide Button</button>
     <button id="showBtn">Show Button</button>
     <p>This is my paragraph 1</p>
     <p>This is my paragraph 2</p>
     <p>This is my paragraph 3</p>
     <p>This is my paragraph 4</p>
-    <p>This is my paragraph 5</p>
-        <script src="./jquery-3.7.1.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("p").hover(function(){
-                    $(this).css("cursor","pointer");
-                });
-                $("p").click(function(){
-                    $(this).hide();
-                });
-                $("#toggleButton").click(function(){
-                    $("h1").hide(400);
-                });
-                $("#showBtn").click(function(){
-                    $("h1").show(400);
-                });
-            });
-            "Basic"
-            // console.log(`We are Using ${jQuery}`);
-            // $("p").click(function(){
-            //     $("p").hide();
-            // })
-            // $("p").click(function(){
-            //     alert(`Button is Clicked!`)
-            // })
-    
-                "Show hide Element"
-            // $(document).ready(function(){
-            //     $("#toggleButton").click(function(){
-            //         $("p").hide(700);
-            //     });
-            //     $("#showBtn").click(function(){
-            //         $("p").show(500);
-            //     });
-            // });
-    
-            "Applying CSS"
-            // $("p").hover(
-            //     function() { $(this).css("background-color", "yellow"); },
-            //     function() { $(this).css("background-color", "white"); }
-            // );
-    
-            // $("#toggleButton").hover(
-            //     function(){$(this).css("background-color","purple")},
-            //     function(){$(this).css("background-color","white")}
-            // );
-            
 
-        </script>
+
+<!-- <script src="./jquery-3.7.1.min.js"></script>Include jQuery Library (via CDN) -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="./jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
