@@ -1,8 +1,12 @@
 .dark{
-    background-color: black;
+    background-color: rgb(51, 48, 48);
     color: white;
 }
 .light{
     background-color: white;
     color: black;
+}
+#theme{
+float: right;
+margin: 8px;
 }
