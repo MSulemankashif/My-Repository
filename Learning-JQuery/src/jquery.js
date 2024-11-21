@@ -43,4 +43,19 @@
 //     function(){$(this).css("background-color","white")}
 // );
 
+let button = document.querySelector("#theme");
+let body = document.querySelector("body");
+let mode = "light";
 
+button.addEventListener("click",()=>{
+    if ( mode === "light"){
+        mode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
+    }else{
+        mode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+    } console.log(mode);
+    
+})
