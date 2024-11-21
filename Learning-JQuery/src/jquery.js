@@ -52,10 +52,41 @@ button.addEventListener("click",()=>{
         mode = "dark";
         body.classList.add("dark");
         body.classList.remove("light");
+        button.innerText="Light Mode";
     } else{
         mode = "light"
         body.classList.add("light");
-        body.classList.remove("dark")
+        body.classList.remove("dark");
+        button.innerText="Dark Mode";
     } console.log(mode);
+});
+    "Method for getting Square root of a number"
+    let array = [2,4,6,8,10,11];
+    // array.forEach((val)=>{
+    //     console.log(`Square root of ${val} is `,val ** 2);
+    // });
+
+    "Method 2 for getting Square root of a number"
+    // let square = (num)=>{
+    //     console.log(num **2);
+    // }
+    // array.forEach(square);
+    "Map Method"
+    // let newArr = array.map((val)=>{
+    //     return val **2    
+    // });
+    // console.log(newArr);
+
+    "Filter Method"
+    // let evenArray= array.filter(num => num %2!==0);
+    // console.log(evenArray);
+    "Average of Class Marks"
+    // let marks = [90, 85, 95, 92, 88];
+    // let sum =0;
+    // for(let val of marks){
+    //     sum +=val;
+    //     // sum = sum + val;
+    // }
+    // let avg = sum/marks.length;
+    // console.log(`The average of class marks is ${avg}`);
     
-})
