@@ -22,8 +22,22 @@
     <p>This is my paragraph 3</p>
     <p>This is my paragraph 4</p>
     <p>This is my paragraph 5</p>
-        <script src="./src/jquery-3.7.1.min.js"></script>
+        <script src="./jquery-3.7.1.min.js"></script>
         <script>
+            $(document).ready(function(){
+                $("p").hover(function(){
+                    $(this).css("cursor","pointer");
+                });
+                $("p").click(function(){
+                    $(this).hide();
+                });
+                $("#toggleButton").click(function(){
+                    $("h1").hide(400);
+                });
+                $("#showBtn").click(function(){
+                    $("h1").show(400);
+                });
+            });
             "Basic"
             // console.log(`We are Using ${jQuery}`);
             // $("p").click(function(){
@@ -53,39 +67,7 @@
             //     function(){$(this).css("background-color","purple")},
             //     function(){$(this).css("background-color","white")}
             // );
-    
-    
-            $(document).ready(function(){
-                $("p").click(
-                function(){$(this).hide()}
-            );
-    
-            $("button").hover(
-                function(){$(this).css("background-color","purple")},
-                function(){$(this).css("background-color","white")}
-            )
-            });
-           
-
-            $(document).ready(function(){
-            $("button").click(function(){
-                $("h1").text("Hello");
-                $("h1").css("cursor","pointer");
-        });
-        });
-        $(document).ready(function(){
-
-const originalText = $("h1").text();
-
-$("button").click(function(){
-let currentText = $("h1").text();
-if(currentText === originalText){
-    $("h1").text("Text Changed").css("cursor","pointer");
-} else{
-    $("h1").text(originalText).css("cursor","pointer");
-}
-});
-});
+            
 
         </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
