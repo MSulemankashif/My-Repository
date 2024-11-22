@@ -90,3 +90,56 @@ button.addEventListener("click",()=>{
     // let avg = sum/marks.length;
     // console.log(`The average of class marks is ${avg}`);
     
+    // let n = prompt("Enter a number");
+    // // let arr=[n];
+    // console.log(arr);
+
+    "Loops in JavaScript"
+    let i = 0;
+    "While Loop"
+    // while(i<5){
+    //     console.log(i);
+    //     i++;
+    // }
+    "Do While Loop"
+    // do{
+    //     console.log(i);
+    //     i++
+    // }while(i<5);
+    "For of Loop"
+    // let arrayOf = [10,20,30,40];
+    // for(value of arrayOf){
+    //     console.log(value);
+    // };
+    "For In Loop(Used with Objects)"
+    // let obj ={
+    //     name : "Suleman",
+    //     age : 20,
+    //     profession:"student"
+    // }
+    // for(key in obj){
+    //     console.log(`${key}:${obj[key]}`);
+    // };
+    "Break Statement"
+   let students=["Suleman","Usman","Ali","Ahmed"];
+
+//    for(i=0;i<students.length;i++){
+//     if(students[i]=="Ahmed") break;
+//     console.log(students[i]);
+//    };
+    "Continue Statement"
+    // for(let i=0;i<students.length;i++){
+    //     if(students[i]=="Ali") continue;
+    //     console.log(students[i]);
+    // };
+    "Assigning Function"
+    // function greet(name){
+    //     console.log(`Hello ${name} !`);
+    // };
+    // greet(prompt("Enter your name"));
+    "Arrow functions"
+    // const multiply = (c ,b) =>{
+    //  return   c*b
+    // }
+    // console.log(multiply(10,10));
+    

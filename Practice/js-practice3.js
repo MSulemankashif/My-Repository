@@ -156,9 +156,9 @@ let str = "Hello, World!";
 let str1 = "Hello,";
 let str2 = "World!";
 
-console.log(str.length);                  //Returns the Length of the String
-console.log(str.charAt(0));              //Returns the character at the specified index
-console.log(str.includes("World"));      //Returns True or False
+console.log(str.length);                //Returns the Length of the String
+console.log(str.charAt(0));             //Returns the character at the specified index
+console.log(str.includes("World"));     //Returns True or False
 console.log(str.indexOf("World"));
 console.log(str.slice(0,5));            //Extracts a section of the string and returns it as a new  string
 console.log(str.substring(0,5));        //Similar to slice but cannot accept negative indices
