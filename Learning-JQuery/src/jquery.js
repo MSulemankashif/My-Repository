@@ -121,7 +121,7 @@ button.addEventListener("click",()=>{
     //     console.log(`${key}:${obj[key]}`);
     // };
     "Break Statement"
-   let students=["Suleman","Usman","Ali","Ahmed"];
+//    let students=["Suleman","Usman","Ali","Ahmed"];
 
 //    for(i=0;i<students.length;i++){
 //     if(students[i]=="Ahmed") break;
@@ -142,4 +142,13 @@ button.addEventListener("click",()=>{
     //  return   c*b
     // }
     // console.log(multiply(10,10));
+    
+    "String Methods"
+    let str = "Learning JavaScript!"
+    console.log(str.length);
+    console.log(str.slice(0,19));
+    console.log(str.toLowerCase());
+    console.log(str.toUpperCase());
+    console.log(str.indexOf("JavaScript"));
+    console.log(str.lastIndexOf("S"));
     
