@@ -1,0 +1,8 @@
+{
+    "name":"Suleman",
+    "age":19,
+    "city":"Karachi",
+    "country":"Pakistan",
+    "hobbies": ["reading", "swimming", "gaming"],
+    "address": "House no A77"
+}
