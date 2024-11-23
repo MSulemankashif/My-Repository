@@ -151,4 +151,14 @@ button.addEventListener("click",()=>{
     console.log(str.toUpperCase());
     console.log(str.indexOf("JavaScript"));
     console.log(str.lastIndexOf("S"));
+    console.log(str.includes("Learning"));
+    console.log(str.startsWith("Learning"));
+    console.log(str.endsWith("!"));
+    "Match"
+    let matchResult = str.match(/Learning/g);
+    console.log(matchResult);
+    "Search" //Returns only index number of the Search
+    let searchResult =str.search(/Learning/);
+    console.log(searchResult);
+    console.log(str.replace("Learning","Learned"));
     
