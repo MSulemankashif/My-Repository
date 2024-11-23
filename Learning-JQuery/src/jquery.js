@@ -161,4 +161,11 @@ button.addEventListener("click",()=>{
     let searchResult =str.search(/Learning/);
     console.log(searchResult);
     console.log(str.replace("Learning","Learned"));
+    console.log(str.split(" "));
+    console.log([str].join(""));
+    console.log(str.trim());
+    console.log(str.trimStart());
+    console.log(str.trimEnd());
+    console.log(str.repeat(2));
+    
     
