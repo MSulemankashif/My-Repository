@@ -111,6 +111,7 @@ button.addEventListener("click",()=>{
     // for(value of arrayOf){
     //     console.log(value);
     // };
+    "A Javascript object is an entity having some state and behaviour (Properties and Methods)"
     "For In Loop(Used with Objects)"
     // let obj ={
     //     name : "Suleman",
@@ -147,27 +148,41 @@ button.addEventListener("click",()=>{
     let num = 10;
     num>11 ? console.log(true) : console.log(false);
 
-    "Call back Functions"
-    // function greet(name, callback ){
-    //     console.log(`hello` + name);
-    //     callback();
-    // }
-    // function sayGoodbye(){
-    //     console.log(`Goodbye!`);
-    // }
-    // greet("Suleman",sayGoodbye);
-    "Synchronous CallBack"
-    function fetchData(callback){
-        setTimeout(()=>{
-            console.log("Data Fetched");
-            callback();
-        }, 2000);
-    }
-    function processData (){
-        console.log("Processing Data...");
-    };
-    fetchData(processData);
+       "Call back Functions"
+       // function greet(name, callback ){
+       //     console.log(`hello` + name);
+       //     callback();
+       // }
+       // function sayGoodbye(){
+       //     console.log(`Goodbye!`);
+       // }
+       // greet("Suleman",sayGoodbye);
+       "Synchronous CallBack"
+    //    function fetchData(callback){
+    //        setTimeout(()=>{
+    //            console.log("Processing...");
+    //            callback();
+    //        },);
+    //    }
+    //    function processData (){
+    //        setTimeout(()=>{
+    //            console.log("Data Fetched");
+    //        }, 3000);
+    //    };
+    //    fetchData(processData);
+       "Example"
+    //    function fetchData(callback) {
+    //        setTimeout(() => {
+    //            console.log("Data fetched");
+    //            callback();
+    //        }, 2000);
+    //    }
+       
+    //    function processData() {
+    //        console.log("Processing data...");
+    //    };
     
+    // fetchData(processData);
     "String Methods"
     let str = "Learning JavaScript!"
     console.log(str.length);
