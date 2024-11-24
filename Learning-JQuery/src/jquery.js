@@ -143,6 +143,20 @@ button.addEventListener("click",()=>{
     // }
     // console.log(multiply(10,10));
     
+    "Ternary Operator"
+    let num = 10;
+    num>11 ? console.log(true) : console.log(false);
+
+    "Call back Functions"
+    function greet(name, callback ){
+        console.log(`hello` + name);
+        callback();
+    }
+    function sayGoodbye(){
+        console.log(`Goodbye!`);
+    }
+    greet("Suleman",sayGoodbye)
+
     "String Methods"
     let str = "Learning JavaScript!"
     console.log(str.length);
@@ -167,5 +181,16 @@ button.addEventListener("click",()=>{
     console.log(str.trimStart());
     console.log(str.trimEnd());
     console.log(str.repeat(2));
-    
+    "Array Destruction"
+    let arr = [1,2,3];
+    let [a,b,c]= arr;
+    console.log(a,b,c);
+    "Spread Operator"
+    let arr1 = [1,2,3];
+    let arr2 = [...arr1,4,5];
+    console.log(arr2);
+    "Set Method (A set is a collection of unique values)"
+    let uniqueNumbers = new Set([1,2,3,4,5,2]);
+    console.log(uniqueNumbers);
+
     
