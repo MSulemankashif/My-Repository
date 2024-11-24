@@ -148,15 +148,26 @@ button.addEventListener("click",()=>{
     num>11 ? console.log(true) : console.log(false);
 
     "Call back Functions"
-    function greet(name, callback ){
-        console.log(`hello` + name);
-        callback();
+    // function greet(name, callback ){
+    //     console.log(`hello` + name);
+    //     callback();
+    // }
+    // function sayGoodbye(){
+    //     console.log(`Goodbye!`);
+    // }
+    // greet("Suleman",sayGoodbye);
+    "Synchronous CallBack"
+    function fetchData(callback){
+        setTimeout(()=>{
+            console.log("Data Fetched");
+            callback();
+        }, 2000);
     }
-    function sayGoodbye(){
-        console.log(`Goodbye!`);
-    }
-    greet("Suleman",sayGoodbye)
-
+    function processData (){
+        console.log("Processing Data...");
+    };
+    fetchData(processData);
+    
     "String Methods"
     let str = "Learning JavaScript!"
     console.log(str.length);
