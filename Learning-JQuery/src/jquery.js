@@ -145,8 +145,8 @@
     // console.log(multiply(10,10));
     
     "Ternary Operator"
-    let num = 10;
-    num>11 ? console.log(true) : console.log(false);
+    // let num = 10;
+    // num>11 ? console.log(true) : console.log(false);
 
        "Call back Functions"
        // function greet(name, callback ){
@@ -189,42 +189,43 @@
         age:20,
         marks:94.2,
         printMarks: function(){
-            console.log(`marks is = ${this.marks}`);
+            console.log(`Name is = ${this.namee}`);
         }
     };
     students.printMarks();
+    
     "String Methods"
-    let str = "Learning JavaScript!"
-    console.log(str.length);
-    console.log(str.slice(0,19));
-    console.log(str.toLowerCase());
-    console.log(str.toUpperCase());
-    console.log(str.indexOf("JavaScript"));
-    console.log(str.lastIndexOf("S"));
-    console.log(str.includes("Learning"));
-    console.log(str.startsWith("Learning"));
-    console.log(str.endsWith("!"));
+    // let str = "Learning JavaScript!"
+    // console.log(str.length);
+    // console.log(str.slice(0,19));
+    // console.log(str.toLowerCase());
+    // console.log(str.toUpperCase());
+    // console.log(str.indexOf("JavaScript"));
+    // console.log(str.lastIndexOf("S"));
+    // console.log(str.includes("Learning"));
+    // console.log(str.startsWith("Learning"));
+    // console.log(str.endsWith("!"));
     "Match"
-    let matchResult = str.match(/Learning/g);
-    console.log(matchResult);
+    // let matchResult = str.match(/Learning/g);
+    // console.log(matchResult);
     "Search" //Returns only index number of the Search
-    let searchResult =str.search(/Learning/);
-    console.log(searchResult);
-    console.log(str.replace("Learning","Learned"));
-    console.log(str.split(" "));
-    console.log([str].join(""));
-    console.log(str.trim());
-    console.log(str.trimStart());
-    console.log(str.trimEnd());
-    console.log(str.repeat(2));
+    // let searchResult =str.search(/Learning/);
+    // console.log(searchResult);
+    // console.log(str.replace("Learning","Learned"));
+    // console.log(str.split(" "));
+    // console.log([str].join(""));
+    // console.log(str.trim());
+    // console.log(str.trimStart());
+    // console.log(str.trimEnd());
+    // console.log(str.repeat(2));
     "Array Destruction"
-    let arr = [1,2,3];
-    let [a,b,c]= arr;
-    console.log(a,b,c);
+    // let arr = [1,2,3];
+    // let [a,b,c]= arr;
+    // console.log(a,b,c);
     "Spread Operator"
-    let arr1 = [1,2,3];
-    let arr2 = [...arr1,4,5];
-    console.log(arr2);
+    // let arr1 = [1,2,3];
+    // let arr2 = [...arr1,4,5];
+    // console.log(arr2);
     "Set Method (A set is a collection of unique values)"
-    let uniqueNumbers = new Set([1,2,3,4,5,2]);
-    console.log(uniqueNumbers);
+    // let uniqueNumbers = new Set([1,2,3,4,5,2]);
+    // console.log(uniqueNumbers);
