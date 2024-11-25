@@ -42,24 +42,24 @@
 //     function(){$(this).css("background-color","purple")},
 //     function(){$(this).css("background-color","white")}
 // );
-
-let button = document.querySelector("#theme");
-let body = document.querySelector("body");
-let mode = "light";
-
-button.addEventListener("click",()=>{
-    if(mode === "light"){
-        mode = "dark";
-        body.classList.add("dark");
-        body.classList.remove("light");
-        button.innerText="Light Mode";
-    } else{
-        mode = "light"
-        body.classList.add("light");
-        body.classList.remove("dark");
-        button.innerText="Dark Mode";
-    } console.log(mode);
-});
+   
+   let button = document.querySelector("#theme");
+   let body = document.querySelector("body");
+   let mode = "light";
+   
+   button.addEventListener("click",()=>{
+       if(mode === "light"){
+           mode = "dark";
+           body.classList.add("dark");
+           body.classList.remove("light");
+           button.innerText="Light Mode";
+       } else{
+           mode = "light"
+           body.classList.add("light");
+           body.classList.remove("dark");
+           button.innerText="Dark Mode";
+       } console.log(mode);
+   });
     "Method for getting Square root of a number"
     let array = [2,4,6,8,10,11];
     // array.forEach((val)=>{
@@ -122,12 +122,12 @@ button.addEventListener("click",()=>{
     //     console.log(`${key}:${obj[key]}`);
     // };
     "Break Statement"
-//    let students=["Suleman","Usman","Ali","Ahmed"];
-
-//    for(i=0;i<students.length;i++){
-//     if(students[i]=="Ahmed") break;
-//     console.log(students[i]);
-//    };
+    //let students=["Suleman","Usman","Ali","Ahmed"];
+    
+    //for(i=0;i<students.length;i++){
+    // if(students[i]=="Ahmed") break;
+    // console.log(students[i]);
+    //};
     "Continue Statement"
     // for(let i=0;i<students.length;i++){
     //     if(students[i]=="Ali") continue;
@@ -170,7 +170,7 @@ button.addEventListener("click",()=>{
     //        }, 3000);
     //    };
     //    fetchData(processData);
-       "Example"
+       "Example (of CallBack)"
     //    function fetchData(callback) {
     //        setTimeout(() => {
     //            console.log("Data fetched");
@@ -183,6 +183,16 @@ button.addEventListener("click",()=>{
     //    };
     
     // fetchData(processData);
+    "Object"
+    let students = {
+        namee: "Suleman",
+        age:20,
+        marks:94.2,
+        printMarks: function(){
+            console.log(`marks is = ${this.marks}`);
+        }
+    };
+    students.printMarks();
     "String Methods"
     let str = "Learning JavaScript!"
     console.log(str.length);
@@ -218,5 +228,3 @@ button.addEventListener("click",()=>{
     "Set Method (A set is a collection of unique values)"
     let uniqueNumbers = new Set([1,2,3,4,5,2]);
     console.log(uniqueNumbers);
-
-    
