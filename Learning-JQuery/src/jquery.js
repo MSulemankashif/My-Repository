@@ -229,3 +229,7 @@
     "Set Method (A set is a collection of unique values)"
     // let uniqueNumbers = new Set([1,2,3,4,5,2]);
     // console.log(uniqueNumbers);
+    "Generating Username"
+    let username = prompt ("Enter your name");
+    console.log(`@${username}${username.length+12}`);
+    
