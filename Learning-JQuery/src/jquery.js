@@ -193,7 +193,7 @@
         }
     };
     students.printMarks();
-    
+
     "String Methods"
     // let str = "Learning JavaScript!"
     // console.log(str.length);
