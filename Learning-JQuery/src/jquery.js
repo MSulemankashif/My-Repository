@@ -251,8 +251,18 @@
             if(getNextdata){
                 getNextdata();
             }
-        },200);
+        },1000);
     };
+    //CallBack Hell (Nested callbacks stacked below one another forming a pyramid structure)
     getData(1,()=>{
-        getData(2);
+        console.log(`Getting data 2`);
+        getData(2, ()=>{
+        console.log(`Getting data 3`);
+            getData(3,()=>{
+        console.log(`Getting data 4`);
+                getData(4,()=>{
+                console.log(`Data fetched`);
+                });
+            });
+        });
     });
