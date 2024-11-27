@@ -230,6 +230,17 @@
     // let uniqueNumbers = new Set([1,2,3,4,5,2]);
     // console.log(uniqueNumbers);
     "Generating Username"
-    let username = prompt ("Enter your name");
-    console.log(`@${username}${username.length+12}`);
-    
+    // let username = prompt ("Enter your name");
+    // console.log(`@${username}${username.length+12}`);
+    "Asynschronous Programming"
+    // setTimeout(()=>{
+    //     console.log("Hello World");
+    // },3000);
+    function sum (a,b){
+        console.log(a+b);
+    }
+    function calculator(c,d,e, sumCallback){
+        console.log(c+d+e);
+        sumCallback(c,d);
+    }
+    calculator(5,7,7,sum);
