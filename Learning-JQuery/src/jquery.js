@@ -236,11 +236,23 @@
     // setTimeout(()=>{
     //     console.log("Hello World");
     // },3000);
-    function sum (a,b){
-        console.log(a+b);
-    }
-    function calculator(c,d,e, sumCallback){
-        console.log(c+d+e);
-        sumCallback(c,d);
-    }
-    calculator(5,7,7,sum);
+    "CallBack"
+    // function sum (a,b){
+    //     console.log(a+b);
+    // }
+    // function calculator(c,d,e, sumCallback){
+    //     console.log(c+d+e);
+    //     sumCallback(c,d);
+    // }
+    // calculator(5,7,7,sum);
+    function getData(dataId,getNextdata){
+        setTimeout(()=>{
+            console.log(`Data is ${dataId}`);
+            if(getNextdata){
+                getNextdata();
+            }
+        },200);
+    };
+    getData(1,()=>{
+        getData(2);
+    });
