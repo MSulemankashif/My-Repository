@@ -268,6 +268,22 @@
     //     });
     // });
     "Promises in JavaScript"
-    let promise = new Promise((resolve,reject)=>{
-        console.log(`I am a promise `);
-    });
+    // let promise = new Promise((resolve,reject)=>{
+    //     console.log(`I am a promise `);
+    // });
+    function getData(dataId,getNextdata){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log(`Data is ${dataId}`);
+                   resolve("Success")
+                    if(getNextdata){
+                        getNextdata();
+                    };
+            },2000);
+
+
+        });
+    };
+    let promise = getData(123)
+    console.log(promise);
+    
