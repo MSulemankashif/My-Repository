@@ -245,24 +245,29 @@
     //     sumCallback(c,d);
     // }
     // calculator(5,7,7,sum);
-    function getData(dataId,getNextdata){
-        setTimeout(()=>{
-            console.log(`Data is ${dataId}`);
-            if(getNextdata){
-                getNextdata();
-            }
-        },1000);
-    };
-    //CallBack Hell (Nested callbacks stacked below one another forming a pyramid structure)
-    getData(1,()=>{
-        console.log(`Getting data 2`);
-        getData(2, ()=>{
-        console.log(`Getting data 3`);
-            getData(3,()=>{
-        console.log(`Getting data 4`);
-                getData(4,()=>{
-                console.log(`Data fetched`);
-                });
-            });
-        });
+    'Callback Hell (function'
+    // function getData(dataId,getNextdata){
+    //     setTimeout(()=>{
+    //         console.log(`Data is ${dataId}`);
+    //         if(getNextdata){
+    //             getNextdata();
+    //         }
+    //     },1000);
+    // };
+    "CallBack Hell (Nested callbacks stacked below one another forming a pyramid structure)"
+    // getData(1,()=>{
+    //     console.log(`Getting data 2`);
+    //     getData(2, ()=>{
+    //     console.log(`Getting data 3`);
+    //         getData(3,()=>{
+    //     console.log(`Getting data 4`);
+    //             getData(4,()=>{
+    //             console.log(`Data fetched`);
+    //             });
+    //         });
+    //     });
+    // });
+    "Promises in JavaScript"
+    let promise = new Promise((resolve,reject)=>{
+        console.log(`I am a promise `);
     });
