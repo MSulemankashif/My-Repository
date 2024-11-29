@@ -304,15 +304,27 @@
     //     console.log(`Rejected`);
     // });
     
-    function async (){
+    function asyncFunc1(){
         return new Promise((resolve,reject)=>{
             setTimeout(()=>{
-                console.log(`I am a Asynchoronous function`);
-                resolve("Success");
+                console.log(`I am 1st Asynchronous Function`);
+                resolve(`Success`);
             },2000);
         });
     };
-    let p1 = async();
-    p1.then(()=>{
-        console.log(`Promise is fulfilled Successfully`)
-    })
+    
+    function asyncFunc2(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log(`I am 2nd Asynchronous Function`);
+                resolve(`Success`)
+            },2000);
+        });
+    };
+
+    console.log(`Fetching Data 1...`);
+    asyncFunc1().then(()=>{
+        console.log(`Fetching Data 2...`);
+    asyncFunc2().then(()=>{});
+    });
+    
