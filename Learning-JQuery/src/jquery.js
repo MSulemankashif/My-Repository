@@ -184,15 +184,15 @@
     
     // fetchData(processData);
     "Object"
-    let students = {
-        namee: "Suleman",
-        age:20,
-        marks:94.2,
-        printMarks: function(){
-            console.log(`Name is = ${this.namee}`);
-        }
-    };
-    students.printMarks();
+    // let students = {
+    //     namee: "Suleman",
+    //     age:20,
+    //     marks:94.2,
+    //     printMarks: function(){
+    //         console.log(`Name is = ${this.namee}`);
+    //     }
+    // };
+    // students.printMarks();
 
     "String Methods"
     // let str = "Learning JavaScript!"
@@ -271,19 +271,48 @@
     // let promise = new Promise((resolve,reject)=>{
     //     console.log(`I am a promise `);
     // });
-    function getData(dataId,getNextdata){
+    // function getData(dataId,getNextdata){
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log(`Data is ${dataId}`);
+    //                resolve("Success")
+    //                 if(getNextdata){
+    //                     getNextdata();
+    //                 };
+    //         },2000);
+    //     });
+    // };
+    // let promise = getData(123)
+    // console.log(promise);
+
+    // const getPromise =()=>{
+    //     return new Promise ((resolve,reject)=>{
+    //         console.log(`I am a Promise`);
+    //         // resolve(`Fulfilled Success`);
+    //         reject(`Some error`)
+    //     });
+    // };
+
+    // let promise = getPromise();
+    "If the promise is resolved/Fullfilled this function will run"
+    // promise.then(()=>{
+    //     console.log(`Promise is fulfilled Successfully`);
+    // });
+
+    "and If the promise is not resolved/Fullfilled this function will run"
+    // promise.catch(()=>{
+    //     console.log(`Rejected`);
+    // });
+    
+    function async (){
         return new Promise((resolve,reject)=>{
             setTimeout(()=>{
-                console.log(`Data is ${dataId}`);
-                   resolve("Success")
-                    if(getNextdata){
-                        getNextdata();
-                    };
+                console.log(`I am a Asynchoronous function`);
+                resolve("Success");
             },2000);
-
-
         });
     };
-    let promise = getData(123)
-    console.log(promise);
-    
+    let p1 = async();
+    p1.then(()=>{
+        console.log(`Promise is fulfilled Successfully`)
+    })
