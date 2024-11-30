@@ -271,29 +271,21 @@
     // let promise = new Promise((resolve,reject)=>{
     //     console.log(`I am a promise `);
     // });
-    // function getData(dataId,getNextdata){
-    //     return new Promise((resolve,reject)=>{
-    //         setTimeout(()=>{
-    //             console.log(`Data is ${dataId}`);
-    //                resolve("Success")
-    //                 if(getNextdata){
-    //                     getNextdata();
-    //                 };
-    //         },2000);
-    //     });
-    // };
-    // let promise = getData(123)
-    // console.log(promise);
+    function getData(dataId){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log(`Data is ${dataId}`);
+                   resolve("Success")
+            },2000);
+        });
+    };
 
-    // const getPromise =()=>{
-    //     return new Promise ((resolve,reject)=>{
-    //         console.log(`I am a Promise`);
-    //         // resolve(`Fulfilled Success`);
-    //         reject(`Some error`)
-    //     });
-    // };
-
-    // let promise = getPromise();
+    getData(1).then((res)=>{
+        return getData(2);
+    }).then((res)=>{
+        return getData(3);
+    });
+    
     "If the promise is resolved/Fullfilled this function will run"
     // promise.then(()=>{
     //     console.log(`Promise is fulfilled Successfully`);
@@ -304,27 +296,27 @@
     //     console.log(`Rejected`);
     // });
     
-    function asyncFunc1(){
-        return new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                console.log(`I am 1st Asynchronous Function`);
-                resolve(`Success`);
-            },2000);
-        });
-    };
+    // function asyncFunc1(){
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log(`I am 1st Asynchronous Function`);
+    //             resolve(`Success`);
+    //         },2000);
+    //     });
+    // };
     
-    function asyncFunc2(){
-        return new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                console.log(`I am 2nd Asynchronous Function`);
-                resolve(`Success`)
-            },2000);
-        });
-    };
+    // function asyncFunc2(){
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log(`I am 2nd Asynchronous Function`);
+    //             resolve(`Success`)
+    //         },2000);
+    //     });
+    // };
 
-    console.log(`Fetching Data 1...`);
-    asyncFunc1().then(()=>{
-        console.log(`Fetching Data 2...`);
-    asyncFunc2().then(()=>{});
-    });
+    // console.log(`Fetching Data 1...`);
+    // asyncFunc1().then(()=>{
+    //     console.log(`Fetching Data 2...`);
+    // asyncFunc2().then(()=>{});
+    // });
     
