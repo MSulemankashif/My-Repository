@@ -271,21 +271,37 @@
     // let promise = new Promise((resolve,reject)=>{
     //     console.log(`I am a promise `);
     // });
-    function getData(dataId){
-        return new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                console.log(`Data is ${dataId}`);
-                   resolve("Success")
-            },2000);
-        });
-    };
+    // function getData(dataId){
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log(`Data is ${dataId}`);
+    //                resolve("Success")
+    //         },2000);
+    //     });
+    // };
 
-    getData(1).then((res)=>{
-        return getData(2);
-    }).then((res)=>{
-        return getData(3);
-    });
+    // getData(1).then((res)=>{
+    //     return getData(2);
+    // }).then((res)=>{
+    //     return getData(3);
+    // });
     
+//    function getdata(dataId){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log(`Data is ${dataId}`);
+//             resolve(`Success`);
+//         },2000);
+//     })
+//    };
+
+//    console.log(`Fetching data...`);
+   
+//    getdata(1).then(()=>{
+//     return getdata(2);
+//    })
+   
+
     "If the promise is resolved/Fullfilled this function will run"
     // promise.then(()=>{
     //     console.log(`Promise is fulfilled Successfully`);
@@ -320,3 +336,7 @@
     // asyncFunc2().then(()=>{});
     // });
     
+
+    async function hello(){
+        console.log(`I am asynchronous function`);
+    };
