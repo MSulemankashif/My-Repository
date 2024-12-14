@@ -42,7 +42,7 @@ playGame =(userChoice)=>{
         if(userChoice=== rock)
         {
             userWin= compChoice=== "papers"? true : false;
-        } else if(userChoice==="paper"){
+        }else if(userChoice==="paper"){
             userWin= compChoice==="scissors"? true:false;
         }else{
             userWin = compChoice==="rock"? true : false;
