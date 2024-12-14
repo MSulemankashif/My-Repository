@@ -13,3 +13,28 @@ button.addEventListener("click",()=>{
         body.classList.remove("dark")
     }; console.log(mode);
 });
+
+"Await Async functions"
+function api(dataID){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log(`Data ${dataID}` );
+            resolve(200);
+        },2000);
+    });
+};
+
+async function getData(){
+    console.log(`Getting data 1...`);
+    await api(1);
+    console.log(`Getting data 2...`);
+    await api(2);
+    console.log(`Getting data 3...`);
+    await api(3);
+    console.log(`Getting data 4...`);
+    await api(4);
+    console.log(`Getting data 5...`);
+    await api(5);
+    console.log(`Getting data 6...`);
+    await api(6);
+}
