@@ -1,0 +1,14 @@
+h1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+select{
+    margin-top: 15px;
+}
+body{
+    background-color: rgb(97, 97, 97);
+    color: white;
+}
