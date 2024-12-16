@@ -653,7 +653,7 @@ choices.forEach((choice)=>
     // array.forEach(square);
     "Map Method"
     // let newArr = array.map((val)=>{
-    //     return val **2    
+    //     return val **2
     // });
     // console.log(newArr);
 

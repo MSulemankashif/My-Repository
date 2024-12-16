@@ -88,3 +88,6 @@ transparent;
 <!-- For Inputs Like Buttons Search Bar and more -->
 https://www.svgbackgrounds.com/elements/animated-svg-preloaders/
 https://app.ui-snippets.com/buttons/material-ripple
+
+<!-- For Free APIs -->
+https://free-apis.github.io/#/browse
