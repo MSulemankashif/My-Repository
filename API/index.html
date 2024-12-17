@@ -8,25 +8,50 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="./app.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Fetch API</title>
 </head>
 <body>
     <h1>Currency Converter</h1>
-        <p id="api"></p>
-    <button class="btn btn-outline-danger">Click for facts</button>
+        <!-- <p id="api"></p>
+    <button class="btn btn-danger">Click for facts</button> -->
+
     <div class="container-fluid" style="margin-top: 20px;">
         <form action="">
             <div class="amount">
-            <label for="">Enter Amount</label>
-            <input type="number" value="1" class="form-control">
-        </div>
-
+                <label for="">Enter Amount</label>
+                <input type="number" value="1" class="form-control">
+            </div>
+            <div class="dropdown">
+        <div class="select-container">
+            <strong><label for="" style="margin-top: 10px;">From</label></strong>
+            <img src="https://flagsapi.com/US/shiny/64.png" alt="not found">
         <select class="form-select">
+         <div class="from">
             <option value="USD">USD</option>
             <option value="AUD">AUD</option>
             <option value="EUR">EUR</option>
             <option value="INR">INR</option>
+         </div>
         </select>
+
+        <div class="row">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+            <strong><label for="to" style="margin-top: 10px;">To</label></strong>
+        <img src="https://flagsapi.com/PK/shiny/64.png" alt="not found">
+        <select class="form-select">
+         <div class="from">
+            <option value="USD">USD</option>
+            <option value="PKR" selected>PKR</option>
+            <option value="EUR">EUR</option>
+            <option value="INR">INR</option>
+         </div>
+        </select>
+    </div>
+</div>
+        <p class="m-2">1 USD = 278 PKR</p>
+    <button class="btn btn-primary mt-3">Get exchange rate</button>
     </form>
 
     </div>
