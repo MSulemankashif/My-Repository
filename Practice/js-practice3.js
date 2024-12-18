@@ -880,7 +880,6 @@ choices.forEach((choice)=>
 //    getdata(1).then(()=>{
 //     return getdata(2);
 //    })
-   
 
     "If the promise is resolved/Fullfilled this function will run"
     // promise.then(()=>{

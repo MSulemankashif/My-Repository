@@ -37,3 +37,12 @@ function getFacts(){
 
 let btn = document.querySelector(".btn");
 btn.addEventListener('click',getFacts);
+
+
+const base_url = "https://latest.currency-api.pages.dev/v1/currencies/usd.json";
+
+for (code in countryList){
+    console.log(code);
+    
+}
+
