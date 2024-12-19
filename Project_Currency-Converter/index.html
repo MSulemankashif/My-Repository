@@ -7,17 +7,50 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Project Currency Converter</title>
 </head>
 <body>
+    <h1>Project Currency Converter</h1>
     <div class="container-fluid">
-        <h1>Project Currency Converter</h1>
             <form action="">
+                <h2>Currency Converter</h2>
                 <div class="amount">
                     <label for="Amount">Amount</label>
                     <input type="number" value="1">
                 </div>
+                <div class="dropdowns">
+                    <div class="from">
+                        <label for="from">From</label>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/shiny/64.png" alt="flag">
+                            <select name="from" id="">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="AUD">AUD</option>
+                                <option value="PKR">PKR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="to">
+                        <label for="to">To</label>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/PK/shiny/64.png" alt="flag">
+                            <select name="to" id="">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="AUD">AUD</option>
+                                <option value="PKR" selected>PKR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <p>1USD = 278PKR</p>
+                </div>
+                <button class="btn btn-primary">Get Exchange Rate</button>
             </form>
     </div>
 

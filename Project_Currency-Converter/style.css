@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 h1{
     background-color: black;
     color: white;
@@ -7,6 +11,69 @@ h1{
     animation: suleman 6s infinite;
 }
 
+
+body{
+    background-color: #f4e4ba;
+}
+.container-fluid{
+    background-color: white;
+    width: 390px;
+    border: 2px solid;
+    border-radius: 12px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+form{
+    margin: 2rem 0 2rem 0;
+    width: 300px;
+}
+form select,input{
+    width: 100%;  
+    font-size: 1rem;
+}
+form select{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.dropdowns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+h2{
+    margin-bottom: 40px;
+}
+.select-container img{
+    max-width: 2rem;
+    }
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    /* background-color: red; */
+}
+.select-container select{
+    font-size: 1.2rem;
+}
+
+.dropdowns i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+.btn{
+    width: 100%;
+}
 @keyframes suleman{
     0%{
         color: white;
@@ -20,4 +87,4 @@ h1{
     70%{
         color: chartreuse;
     }
-}
+};
