@@ -1,4 +1,3 @@
-
 function changeContent(page) {
 	let contentDiv = document.getElementById('content');
 
