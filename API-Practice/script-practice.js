@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 let input = document.querySelector("input");
 let img = document.querySelector("img");
@@ -23,4 +24,6 @@ document.querySelector("img").addEventListener("click",()=>{
             pass.type="text";
         }
 })
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
