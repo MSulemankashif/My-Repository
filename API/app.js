@@ -1,10 +1,12 @@
-const URL = "https://cat-fact.herokuapp.com/facts";
+const URL = 'https://dummyjson.com/test';
 
 let getFacts = async ()=>{
     console.log(`Getting data.......`);
 let response = await fetch(URL);
     console.log(response);
 };
+
+document.querySelector(".btn").addEventListener('click', getFacts);
 
     // Using IFFE
 // (async ()=>{
