@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
 let input = document.querySelector("input");
 let img = document.querySelector("img");
@@ -13,7 +11,6 @@ img.addEventListener("click", ()=>{
         img.src = "./eye.svg";
     };
 });
-=======
 let pass = document.querySelector("#pass");
 document.querySelector("img").addEventListener("click",()=>{
         type =Text;
@@ -24,6 +21,3 @@ document.querySelector("img").addEventListener("click",()=>{
             pass.type="text";
         }
 })
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
