@@ -1,0 +1,40 @@
+header{
+    margin: 10px;
+    padding: 8px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    margin-top:10px ;
+}
+header a {
+    text-decoration:none ;
+    color: white;
+}
+header li{
+    display: inline;
+    margin: 10px;
+}
+header ul{
+    margin: 0 0 0 !important;
+    margin-top:10px ;
+    padding: 0,0 0 !important;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+.card{
+    width: 250px !important;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Wraps to next line if space runs out */
+    gap: 20px;        /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px;
+}
