@@ -56,24 +56,14 @@ let modeBtn = document.querySelector(".btn");
 let body = document.querySelector("body");
 let mode = "light";
 
-modeBtn.addEventListener("click",()=>{
-    if(mode === "light")
-    {
-        mode = "dark";
-        body.classList.add("dark");
-        modeBtn.style.color="white";
-        body.classList.remove("light");
-    } else  {  
-        mode = "light";
+modeBtn.addEventListener("click", ()=>{
+    if(mode == "light"){
+        mode = "dark"
+        body.classList.add("dark")
+        body.classList.remove("light")
+    }else{
+        mode = "light"
         body.classList.add("light");
-        modeBtn.style.color="black";
         body.classList.remove("dark");
-    }     
+    }
 });
-
-let array = ["Karachi", "Lahore", "Islamabad","Peshawar", "Multan", "Hyderabad"];
-
-array.forEach((value, index, array)=>{
-    console.log(`Value is ${value} on the ${index}th index`);
-    
-})
