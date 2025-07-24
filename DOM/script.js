@@ -69,5 +69,11 @@ modeBtn.addEventListener("click",()=>{
         modeBtn.style.color="black";
         body.classList.remove("dark");
     }     
-
 });
+
+let array = ["Karachi", "Lahore", "Islamabad","Peshawar", "Multan", "Hyderabad"];
+
+array.forEach((value, index, array)=>{
+    console.log(`Value is ${value} on the ${index}th index`);
+    
+})
