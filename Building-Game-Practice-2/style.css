@@ -1,0 +1,30 @@
+h1{
+    font-size: 60px !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Aptos Narrow'; */
+    font-weight: bold;
+} 
+
+img{
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+}
+img:hover{
+    border: 8px, solid;
+    transition: 150ms;
+    cursor: pointer;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
