@@ -3,19 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Building Game</title>
+  <title>Bootstrap Site</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Rock Papers Scissors</h1>
+    <section class="game">
+      <!-- Title -->
+        <div class="title">Rock Paper Scissors</div>
 
-  <div class="container-fluid">
-    <img src="./src/rock.png" alt="Rock">
-    <img src="./src/paper.png" alt="Papers">
-    <img src="./src/scissors.png" alt="Scissors">
-  </div>
+      <!-- Display Score of Player and Computer -->
+       <div class="score">
+          <div class="playerScore">
+             <h2>Player</h2>
+             <p class="p-count count">0</p>  
+          </div>
+
+          <div class="compScore">
+            <h2>Computer</h2>
+            <p class="c-count count">0</p>
+          </div>
+       </div>
+       <!-- Score Div End -->
+
+       <div class="move">
+        Choose Your Move
+       </div>
+       <!-- Number of Moves left Before the game ends -->
+        <div class="movesleft"> Moves Left: 10</div>
+
+        <div class="options">
+          <button class="rock">Rock</button>
+          <button class="paper">Paper</button>
+          <button class="scissor">Scissors</button>
+        </div>
+
+        <!-- Result -->
+         <div class="result"></div>
+
+         <!-- Reload The Game -->
+          <div class="reload"></div>
+
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
