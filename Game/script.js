@@ -1,7 +1,7 @@
-let choices = document.querySelectorAll('.choice');
+let choices = document.querySelectorAll(".choice");
 let msg = document.querySelector("#msg");
-let userScorePara = document.querySelector("#user-choice");
-let compScorepara = document.querySelector("#comp-choice");
+let userScorepara = document.querySelector("#user-score");
+let compScorepara = document.querySelector("#comp-score");
 let userScore = 0;
 let compScore = 0;
 
@@ -16,12 +16,21 @@ drawGame = () => {
     console.log("Game Draw!");
     msg.innerText = "Game Draw!";
     msg.style.backgroundColor = "#081b31";
-}
-choices.forEach((choice) => {
-    choice.addEventListener("click", ()=>{
-        const userChoice = choice.getAttribute("id");
-    })
-});
+};
+
+const showWinner = (userWin, userChoice, compChoice) => {
+    if(userWin){
+        userScore++;
+        userScorepara.innerText = userScore;
+        msg.innerText = `You Win! ${userChoice} beats ${compChoice}`;
+        msg.style.backgroundColor = "green";
+    }else{
+        compScore++;
+        compScorepara.innerText = compScore;
+        msg.innerText = `You Lose! ${compChoice} beats ${userChoice}`;
+        msg.style.backgroundColor = "red";
+    }
+};
 
 playGame = (userChoice) => {
     console.log(`User choice is ${userChoice}`);
@@ -40,18 +49,13 @@ playGame = (userChoice) => {
         }else{
             userWin = compChoice === "rock"? true : false;
         }
+        showWinner(userWin, userChoice, compChoice);
     }
 }
-const showWinner = (userWin, userChoice, compChoice) => {
-    if(userWin){
-        userScore++;
-        userScorePara.innerText = userScore;
-        msg.innerText = `You Win! ${userChoice} beats ${compChoice}`;
-        msg.style.backgroundColor = "green";
-    }else{
-        compScore++;
-        compScorepara.innerText = compScore;
-        msg.innerText = `You Lose! ${compChoice} beats ${userChoice}`;
-        msg.style.backgroundColor = "red";
-    }
-}
+
+choices.forEach((choice) => {
+    choice.addEventListener("click", ()=>{
+        const userChoice = choice.getAttribute("id");
+        playGame(userChoice);
+    })
+});

@@ -5,11 +5,11 @@ let compScorepara = document.querySelector("#comp-score");
 let userScore = 0;
 let compScore = 0;
 
-genCompchoice= ()=>
+gencompChoice= ()=>
 {
     let options = ["rock","paper","scissors"];
-    let compchoice = Math.floor(Math.random()*3);
-    return options [compchoice];
+    let compChoice = Math.floor(Math.random()*3);
+    return options [compChoice];
 }
 
 drawGame=()=>
@@ -19,42 +19,42 @@ drawGame=()=>
     msg.style.backgroundColor="#081b31";
 }
 
-const showWinner=(userWin,userChoice,compchoice)=>
+const showWinner=(userWin,userChoice,compChoice)=>
 {
     if(userWin)
     {
         userScore++;
         userScorepara.innerText=userScore;
-        msg.innerText=`You Win! ${userChoice} beats ${compchoice}`;
+        msg.innerText=`You Win! ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
     }else 
     {
         compScore++;
         compScorepara.innerText=compScore;
-        msg.innerText=`You Lose! ${compchoice} beats ${userChoice}`;
+        msg.innerText=`You Lose! ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor="red";
     }
 }
 playGame=(userChoice)=>
 {
     console.log(`User choice is ${userChoice}`);
-    let compchoice = genCompchoice();
-    console.log(`Comp choice is ${compchoice}`);
+    let compChoice = gencompChoice();
+    console.log(`Comp choice is ${compChoice}`);
 
-    if(userChoice === compchoice)
+    if(userChoice === compChoice)
     {
         drawGame();
     } else{
         let userWin = true;
         if(userChoice === rock)
         {
-            userWin = compchoice === "paper"? true : false;
+            userWin = compChoice === "paper"? true : false;
         } else if(userChoice === "paper") {
-            userWin = compchoice === "scissors"? true : false;
+            userWin = compChoice === "scissors"? true : false;
         } else {
-            userWin = compchoice ===  "rock"? true : false;
+            userWin = compChoice ===  "rock"? true : false;
         }
-        showWinner(userWin,userChoice,compchoice);
+        showWinner(userWin,userChoice,compChoice);
     };
 };
 
