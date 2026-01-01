@@ -13,6 +13,4 @@ document.querySelector('form').addEventListener('submit', function(event){
     
         h3[0].innerText = `The square root of ${value} is ${result}`
     }
-
-    
 })
