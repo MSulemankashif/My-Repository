@@ -92,6 +92,7 @@ console.log(sum);
 
 // let para = document.querySelector("p");
 // console.log(para.setAttribute("lorem","new lorem"));
+
 // let div = document.querySelector("div");
 // div.style.backgroundColor="red";
 
