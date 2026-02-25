@@ -15,10 +15,10 @@ let mode = "light";
 
 btn.addEventListener("click", ()=>{
     if(mode == "light"){
-        body.style.backgroundColor="black";
+        body.classList.add("dark")
         mode = "dark";
     }else if (mode == "dark"){
-        body.style.backgroundColor="white";
+        body.classList.remove("dark");
         mode = "light";
     };
 });
@@ -111,4 +111,11 @@ function date(){
 return day;
 }
 
-console.log(date());
+let getDateBtn = document.getElementById("getDateBtn");
+let dateDisplay = document.getElementById("dateDisplay");
+
+getDateBtn.addEventListener("click", ()=> {
+    date();
+
+    dateDisplay.innerHTML = "Today is <b>" + date() + "</b>";
+})
