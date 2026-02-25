@@ -62,9 +62,14 @@ function createCounter(){
 }
 
 
-const counter1 = createCounter();
+// const counter1 = createCounter();
 
-console.log(counter1());
-console.log(counter1());
-console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
 
+
+let button = document.createElement("button");
+button.textContent = "Click me";
+button.setAttribute("class", "btn btn-primary mt-3");
+document.body.appendChild(button)
