@@ -69,7 +69,46 @@ function createCounter(){
 // console.log(counter1());
 
 
-let button = document.createElement("button");
-button.textContent = "Click me";
-button.setAttribute("class", "btn btn-primary mt-3");
-document.body.appendChild(button)
+// let button = document.createElement("button");
+// button.textContent = "Click me";
+// button.setAttribute("class", "btn btn-primary mt-3");
+// document.body.appendChild(button)
+
+
+
+// let date = new Date().toUTCString();
+// console.log(date);
+
+
+function date(){
+
+    let day = new Date().getDay();
+    switch (day){
+    
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+}
+
+return day;
+}
+
+console.log(date());
