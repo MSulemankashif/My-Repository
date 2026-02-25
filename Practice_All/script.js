@@ -22,3 +22,49 @@ btn.addEventListener("click", ()=>{
         mode = "light";
     };
 });
+
+// function greet(name){
+//     console.log("Hello", name);
+// }
+
+// greet("suleman");
+
+
+// let greet = function(name){
+//     console.log("Hello", name);
+// }
+// greet("Suleman");
+
+// const person = {
+//     name: "Suleman",
+//     greet: function(){
+//         console.log(this.name);
+//     }
+// };
+
+// person.greet();
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("API");
+}, 2000)
+
+console.log("End");
+
+function createCounter(){
+    count = 0;
+
+    return function(){
+        count++;
+        return count;
+    }
+}
+
+
+const counter1 = createCounter();
+
+console.log(counter1());
+console.log(counter1());
+console.log(counter1());
+
