@@ -119,3 +119,57 @@ getDateBtn.addEventListener("click", ()=> {
 
     dateDisplay.innerHTML = "Today is <b>" + date() + "</b>";
 })
+
+// let x = 10;
+// let y = 20;
+
+// let z = (x <= 10 && y > 15);
+
+// // Logical Not
+// let a = 10;
+
+// let result = !(a > 5);
+// console.log(result);
+
+
+let isAdmin = false;
+
+let result = !!isAdmin;
+console.log(result);
+
+
+// Javascript Underscore
+// let _username = "Suleman";
+// console.log(_username);
+
+
+// let carname;
+// carname = "Honda";
+
+// Loops in Javascript
+let cars = ["Honda", "Toyota", "BMW", "Mercedes", "Audi"];
+
+for(let i = 0; i < cars.length; i++){
+    console.log(cars[i]);
+}
+
+let i = 1;
+// while(i<2){
+//     console.log(i);
+//     i++;
+// }
+
+
+// condition match na karega to kam se kam ek baar to chalega hi
+// let i = 11;
+
+// do{
+//     console.log(i);
+//     i++;
+// }while (i < 10)
+
+for(let i = 0; i < 10; i++){
+    if(i >= 5) {break;}
+    console.log(i);
+    
+}
