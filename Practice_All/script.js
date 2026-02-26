@@ -168,8 +168,21 @@ let i = 1;
 //     i++;
 // }while (i < 10)
 
-for(let i = 0; i < 10; i++){
-    if(i >= 5) {break;}
-    console.log(i);
-    
-}
+// for(let i = 0; i < 10; i++){
+//     if(i >= 5) {break;}
+//     console.log(i);
+// }
+
+let string =  "This is a text";
+
+let result2 = string.charAt(2)
+let result3 = string.concat(" result 3")
+let result4 = string.codePointAt(2)
+let result5 = string.slice()
+let result6 = string
+let result7 = string
+let result8 = string
+let result9 = string
+console.log(result4);
+
+
