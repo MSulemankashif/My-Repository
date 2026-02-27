@@ -173,16 +173,50 @@ let i = 1;
 //     console.log(i);
 // }
 
-let string =  "This is a text";
+let string =  "This is a, text";
 
 let result2 = string.charAt(2)
 let result3 = string.concat(" result 3")
 let result4 = string.codePointAt(2)
 let result5 = string.slice(0, 4)
-let result6 = string.
-let result7 = string
-let result8 = string
+let result6 = string.replace("text", "Replaced Text");
+let result7 = string.replaceAll("text", "Replaced text")
+let result8 = string.split(" ")
 let result9 = string
-console.log(result5);
+console.log(result8);
+
+function reverse(str){
+    console.log(str.split("").reverse().join(""));
+     
+}
+reverse("Javascript");
+
+let text = "Please locate where 'locate' occurs";
+let index = text.indexOf("locate");
+console.log(index);
+
+let r = 123e5
+console.log(r);
+
+let g = 9.565.toExponential(1);
+let num = Number.MAX_VALUE
+
+console.log(num);
+
+// Return Statement
+function returnP(a,b){
+    return a*b
+}
+console.log(returnP(3,5));
+
+
+// Function Expression
+let multiply = function(a,b){
+    return a + b;
+}
+
+console.log(multiply(3,5));
+
+
 
 
