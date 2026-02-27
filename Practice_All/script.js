@@ -219,4 +219,13 @@ console.log(multiply(3,5));
 
 
 
+// Javascript Object
+let obj = {
+    name: "Suleman",
+    age: 18,
+    class: "XI",
+    city: "Karachi"
+}
+
+console.log(obj);
 
