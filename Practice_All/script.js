@@ -220,12 +220,44 @@ console.log(multiply(3,5));
 
 
 // Javascript Object
-let obj = {
-    name: "Suleman",
-    age: 18,
-    class: "XI",
-    city: "Karachi"
-}
+// let obj = {
+//     name: "Suleman",
+//     age: 18,
+//     class: "XI",
+//     city: "Karachi",
+//     id: 1524678,
 
-console.log(obj);
+//     getID: function(){
+//         return this.id;
+//     }
+// };
 
+// let number =  obj.getID();
+// console.log(number);
+
+// let text1 = "";
+// for(let x in obj){
+//     text1 += obj[x] + "";
+// }
+
+// console.log(text1);
+
+// Constructors
+// function Person(first, last, age, eye){
+//     this.firstname = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eye = eye;
+// }
+
+// const mySelf = new Person("Suleman", "Kashif", 19, "black");
+// console.log(mySelf);
+
+
+x = 5;
+
+elem = document.getElementById("demo");
+elem.innerHTML = x;
+var x;
+
+console.log(elem);
