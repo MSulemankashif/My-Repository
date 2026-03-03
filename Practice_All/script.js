@@ -257,15 +257,43 @@ console.log(multiply(3,5));
 
 // console.log(elem);
 
-let date2 = Temporal.Now.plainDateISO();
-console.log(date2);
+// let date2 = Temporal.Now.plainDateISO();
+// console.log(date2);
 
 // Without Time zone
-let time = Temporal.Now.plainTimeISO();
-console.log(time);
+// let time = Temporal.Now.plainTimeISO();
+// console.log(time);
 
 // With Time Zone
-let zonedDate = Temporal.Now.zonedDateTimeISO();
-console.log(zonedDate);
+// let zonedDate = Temporal.Now.zonedDateTimeISO();
+// console.log(zonedDate);
+
+
+let array = ["Toyota", "BMW", "Honda", "Mercedes", "Hyundai", "Suzuki"];
+
+// for(array of array){
+//     console.log(array);
+// }
+
+let Result = array.length;
+console.log(Result);
+
+let array1 =  array.join(" * ");
+console.log(array1);
+
+let array2 = array.push("BYD");
+console.log(array2);
+
+
+
+let fruits = ["banana", "apple", "mango", "kiwi", "peach"];
+
+fruits.shift();
+
+for(fruits of fruits){
+    console.log(fruits);
+    
+}
+
 
 
