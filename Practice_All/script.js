@@ -290,10 +290,9 @@ let fruits = ["banana", "apple", "mango", "kiwi", "peach"];
 
 fruits.shift();
 
-for(fruits of fruits){
-    console.log(fruits);
+for(let i =  0; array.length; i++){
+    console.log([i], array[i]);
     
 }
-
 
 
