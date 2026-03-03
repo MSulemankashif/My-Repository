@@ -254,10 +254,18 @@ console.log(multiply(3,5));
 // console.log(mySelf);
 
 
-x = 5;
 
-elem = document.getElementById("demo");
-elem.innerHTML = x;
-var x;
+// console.log(elem);
 
-console.log(elem);
+let date2 = Temporal.Now.plainDateISO();
+console.log(date2);
+
+// Without Time zone
+let time = Temporal.Now.plainTimeISO();
+console.log(time);
+
+// With Time Zone
+let zonedDate = Temporal.Now.zonedDateTimeISO();
+console.log(zonedDate);
+
+
