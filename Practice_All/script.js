@@ -288,11 +288,10 @@ console.log(array2);
 
 let fruits = ["banana", "apple", "mango", "kiwi", "peach"];
 
-fruits.shift();
+fruits.unshift("avocado");
 
-for(let i =  0; array.length; i++){
-    console.log([i], array[i]);
-    
+for(let i =  0; i < fruits.length; i++){
+    console.log([i], fruits[i]);
 }
 
 
