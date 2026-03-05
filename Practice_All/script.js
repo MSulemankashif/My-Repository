@@ -288,10 +288,13 @@ console.log(array2);
 
 let fruits = ["banana", "apple", "mango", "kiwi", "peach"];
 
-fruits.unshift("avocado");
+// fruits.unshift("avocado");
 
+
+fruits.copyWithin(1,1);
 for(let i =  0; i < fruits.length; i++){
     console.log([i], fruits[i]);
 }
+
 
 
