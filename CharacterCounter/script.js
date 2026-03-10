@@ -18,9 +18,10 @@ form.addEventListener("submit", function(event){
     
     if(error){
         document.getElementById("success").innerText= "Please check your creditionals";
-        document.getElementById("success");
+        document.getElementById("success").style.color = "red";
     }else{
         document.getElementById("success").innerText= "Account Created!";
+        document.getElementById("success").style.color = "green";
         
     }
     
