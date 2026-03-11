@@ -22,6 +22,8 @@ form.addEventListener("submit", function(event){
     }else{
         document.getElementById("success").innerText= "Account Created!";
         document.getElementById("success").style.color = "green";
+        console.log(length);
+        
         
     }
     
