@@ -8,18 +8,85 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Document</title>
 </head>
 <body>
 
 
-    <div class="container">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo"> <i class="fa-solid fa-code"></i>Suleman </a>
+
+        <ul>
+          <li class="nav-item"> <a href="#home" class="nav-link active">Home</a> </li>
+          <li class="nav-item"> <a href="#features" class="nav-link">Features</a> </li>
+          <li class="nav-item"> <a href="#cards" class="nav-link">Card</a> </li>
+          <li class="nav-item"> <a href="#contact" class="nav-link">Contact</a> </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+             <i class="fa-solid fa-moon"></i>
+           </button>
+
+           <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </button>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="badge">🚀 Welcome to the future</span>
+      <div class="hero-title">Build Stunning Interfaces with Ease</div>
+      <p class="hero-description">A modern, fully responsive hero layout with interactive cards, sticky glassmorphic navigation, and theme customization built using pure CSS & JavaScript.</p>
+
+      <div class="hero-btns">
+        <a href="#cards" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+      </div>
     </div>
+
+    <div class="hero-cards" id="cards">
+      <!-- First Card -->
+      <div class="card">
+        <div class="card-icon"> <i class="fa-solid fa-layer-group"></i> </div>
+        <h3>Modular Design</h3>
+        <p>Clean and Component based code structured for high scalability</p>
+        <button class="card-btn">Explore <i class="fa-solid fa-chevron-right"></i> </button>
+      </div>
+
+      <!-- Second Card -->
+      <div class="card">
+        <div class="card-icon"> <i class="fa-solid fa-bolt"></i> </div>
+        <h3>Fast Performance</h3>
+        <p>Light weight CSS animations wwithout heavy external libraries  </p>
+        <button class="card-btn">Explore <i class="fa-solid fa-chevron-right"></i> </button>
+      </div>
+
+      <!-- Third Card -->
+      <div class="card">
+        <div class="card-icon"> <i class="fa-solid fa-shield-halved"></i> </div>
+        <h3>Secure and Reliable</h3>
+        <p>Built following industry standards for smooth cross-browser rendering </p>
+        <button class="card-btn">Explore <i class="fa-solid fa-chevron-right"></i> </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
