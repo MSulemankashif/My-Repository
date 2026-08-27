@@ -6,18 +6,9 @@ img.addEventListener("click", ()=>{
     if(input.type === "password"){
         input.type = "text";
         img.src = "./unhide.svg";
-    } else{
+    } else if(input.type === "text"){
         input.type = "password";
         img.src = "./eye.svg";
     };
 });
-let pass = document.querySelector("#pass");
-document.querySelector("img").addEventListener("click",()=>{
-        type =Text;
-        if(type == "pass")
-        {
-            pass.type="pass";
-        } else{
-            pass.type="text";
-        }
-})
+

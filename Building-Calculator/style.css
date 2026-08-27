@@ -1,5 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    transition: 1.2s;
+}
+
 .box{
-    height:50px;
+    height: 200px;
     width: 200px;
-    background-color: #f0f0f0;
+    background-color: red;
+    flex-grow: 1; 
+    /* Flex Grow khali jagah ko fill karny ky liye box ko expand karta hai */
+    flex-basis: 250px;
 }
